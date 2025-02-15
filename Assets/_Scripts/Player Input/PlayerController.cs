@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _playerInput = GetComponent<PlayerInput>();
+
+        Application.targetFrameRate = 60;
     }
 
     private void OnEnable() => _playerInput.actions.Enable();
