@@ -452,44 +452,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227929183}
   m_CullTransparentMesh: 1
---- !u!21 &255243784
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Vortex Game Studios/SpriteSwitch
-  m_Shader: {fileID: 4800000, guid: d10d2a7cc030d034b8b736aede825cc7, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SwitchTex:
-        m_Texture: {fileID: 2800000, guid: a3e0ea80fb6846c4da2b7ff5aa3497d4, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - PixelSnap: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &303218765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,6 +1008,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1957723628}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &521037877
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Vortex Game Studios/SpriteSwitch
+  m_Shader: {fileID: 4800000, guid: d10d2a7cc030d034b8b736aede825cc7, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SwitchTex:
+        m_Texture: {fileID: 2800000, guid: a3e0ea80fb6846c4da2b7ff5aa3497d4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - PixelSnap: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &522936661
 GameObject:
   m_ObjectHideFlags: 0
@@ -43208,6 +43208,7 @@ GameObject:
   - component: {fileID: 659746397}
   - component: {fileID: 659746396}
   - component: {fileID: 659746400}
+  - component: {fileID: 659746401}
   m_Layer: 0
   m_Name: Npc_1
   m_TagString: npc
@@ -43310,7 +43311,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2007230440}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -43331,7 +43332,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: dd6cf51099e60664b9318f106950da94, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -43402,6 +43403,19 @@ MonoBehaviour:
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
+--- !u!114 &659746401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659746395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d578b26cf4b934e45b917c38cf380cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _switchSprite: {fileID: 2800000, guid: dd6cf51099e60664b9318f106950da94, type: 3}
 --- !u!1 &756348603
 GameObject:
   m_ObjectHideFlags: 0
@@ -43957,7 +43971,7 @@ MonoBehaviour:
   triggerState: 1
   sentences:
   - dialogueCharacter: {fileID: 0}
-    sentence: Hi! I'm npc 2!
+    sentence: 'Hi '
     skipDelayTime: 0
     sentenceSound: {fileID: 0}
     sentenceEvent:
@@ -44093,7 +44107,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: 07a0f62d5ef50554487aa0734efa9619, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -47443,7 +47457,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 255243784}
+  - {fileID: 521037877}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47592,6 +47606,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _switchSprite: {fileID: 2800000, guid: a3e0ea80fb6846c4da2b7ff5aa3497d4, type: 3}
+--- !u!21 &2007230440
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Vortex Game Studios/SpriteSwitch
+  m_Shader: {fileID: 4800000, guid: d10d2a7cc030d034b8b736aede825cc7, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SwitchTex:
+        m_Texture: {fileID: 2800000, guid: dd6cf51099e60664b9318f106950da94, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - PixelSnap: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &2081661373
 GameObject:
   m_ObjectHideFlags: 0

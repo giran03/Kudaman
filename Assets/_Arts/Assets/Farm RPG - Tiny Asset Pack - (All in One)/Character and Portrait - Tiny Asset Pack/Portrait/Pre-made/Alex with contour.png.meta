@@ -1,0 +1,742 @@
+fileFormatVersion: 2
+guid: 7921e0d6e60a4db47811b2a058a17476
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4191879593818882912
+    second: Alex with contour_0
+  - first:
+      213: 2171800926181892828
+    second: Alex with contour_1
+  - first:
+      213: 6707198942960197182
+    second: Alex with contour_2
+  - first:
+      213: -1577688718508467895
+    second: Alex with contour_3
+  - first:
+      213: 2654964984915064269
+    second: Alex with contour_4
+  - first:
+      213: 2637031074798902640
+    second: Alex with contour_5
+  - first:
+      213: 7559486332836436124
+    second: Alex with contour_6
+  - first:
+      213: 5391598409847143794
+    second: Alex with contour_7
+  - first:
+      213: -2029862850958782239
+    second: Alex with contour_8
+  - first:
+      213: 3344519443012489776
+    second: Alex with contour_9
+  - first:
+      213: -1738567303658617414
+    second: Alex with contour_10
+  - first:
+      213: -8689482825825881667
+    second: Alex with contour_11
+  - first:
+      213: 8390554624688464688
+    second: Alex with contour_12
+  - first:
+      213: 1443702324617700223
+    second: Alex with contour_13
+  - first:
+      213: 5616256497409148321
+    second: Alex with contour_14
+  - first:
+      213: 598161516071236381
+    second: Alex with contour_15
+  - first:
+      213: 310047960173933473
+    second: Alex with contour_16
+  - first:
+      213: -3256824143310578350
+    second: Alex with contour_17
+  - first:
+      213: -5807643111061486677
+    second: Alex with contour_18
+  - first:
+      213: 4892694490796984177
+    second: Alex with contour_19
+  - first:
+      213: 2144142403186396403
+    second: Alex with contour_20
+  - first:
+      213: -8084405753120265199
+    second: Alex with contour_21
+  - first:
+      213: -5893520476710523754
+    second: Alex with contour_22
+  - first:
+      213: 1354961888823587630
+    second: Alex with contour_23
+  - first:
+      213: -8424437822461194634
+    second: Alex with contour_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alex with contour_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 447
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06388c2f74c8c2a30800000000000000
+      internalID: 4191879593818882912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 447
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2afe78f69c32e10800000000000000
+      internalID: 2171800926181892828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 447
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e940107e1c41d50800000000000000
+      internalID: 6707198942960197182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 496
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 949592f287cea1ae0800000000000000
+      internalID: -1577688718508467895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 383
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc576f0569458d420800000000000000
+      internalID: 2654964984915064269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_5
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 383
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d1e0b7acd989420800000000000000
+      internalID: 2637031074798902640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_6
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 383
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98d22194c0b8e860800000000000000
+      internalID: 7559486332836436124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 319
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dff76103ec2da40800000000000000
+      internalID: 5391598409847143794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 319
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e017d1ed7a74d3e0800000000000000
+      internalID: -2029862850958782239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_9
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 319
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0329521a6be1a6e20800000000000000
+      internalID: 3344519443012489776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 255
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5c157af3e5fd7e0800000000000000
+      internalID: -1738567303658617414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_11
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 255
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db17ac4a861c86780800000000000000
+      internalID: -8689482825825881667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_12
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 255
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0332111e9fc317470800000000000000
+      internalID: 8390554624688464688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_13
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 191
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f736e3c7d9f090410800000000000000
+      internalID: 1443702324617700223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_14
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 191
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a54d873783f0fd40800000000000000
+      internalID: 5616256497409148321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_15
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 191
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d133cbbcab81d4800800000000000000
+      internalID: 598161516071236381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 127
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a370812af28d4400800000000000000
+      internalID: 310047960173933473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 127
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d9e0272bf6dc2d0800000000000000
+      internalID: -3256824143310578350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_18
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 127
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba38fe65c5b176fa0800000000000000
+      internalID: -5807643111061486677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_19
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 63
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 177077e77b756e340800000000000000
+      internalID: 4892694490796984177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_20
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 63
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc07c1d72681cd10800000000000000
+      internalID: 2144142403186396403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_21
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 63
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c6421fccb6ecf80800000000000000
+      internalID: -8084405753120265199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_22
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 51
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69cad250a52063ea0800000000000000
+      internalID: -5893520476710523754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_23
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 51
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e23b583b8aacdc210800000000000000
+      internalID: 1354961888823587630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alex with contour_24
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 51
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ec5df5f62661b80800000000000000
+      internalID: -8424437822461194634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
