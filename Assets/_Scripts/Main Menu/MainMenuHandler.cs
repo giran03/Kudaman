@@ -1,3 +1,5 @@
+using EasyTransition;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,6 +18,10 @@ public class MainMenuHandler : MonoBehaviour
     [SerializeField] string mainSceneName = "Game";
     [SerializeField] string instructionsSceneName = "Instructions";
     [SerializeField] string creditsSceneName = "Credits";
+
+    [Header("Transition")]
+    [SerializeField] TransitionSettings transitionSettings;
+    [SerializeField] float transitionDelay;
 
     private void Awake()
     {
@@ -39,7 +45,8 @@ public class MainMenuHandler : MonoBehaviour
     public void PlayGame()
     {
         // Load the main game scene
-        SceneManager.LoadScene(mainSceneName);
+        // SceneManager.LoadScene(mainSceneName);
+        TransitionManager.Instance().Transition(mainSceneName, transitionSettings, transitionDelay);
     }
 
     public void GoToInstructions()

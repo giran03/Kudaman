@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class HudButtons : MonoBehaviour
 {
     [SerializeField] Button menuPauseButton;
+    [SerializeField] Button homeButton;
     [SerializeField] Button menuResumeButton;
 
     [Header("Pop Up Animation")]
@@ -25,6 +26,7 @@ public class HudButtons : MonoBehaviour
 
     void Start()
     {
+        homeButton?.onClick.AddListener(GoToMainMenu);
         menuPauseButton?.onClick.AddListener(Pause);
         menuResumeButton?.onClick.AddListener(ResumeAsync);
 
@@ -65,6 +67,13 @@ public class HudButtons : MonoBehaviour
     {
         Time.timeScale = 1f; // Reset time before loading
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1f; // Reset time before loading
+        SceneManager.LoadScene("MainMenu");
     }
 
     // Pop Up Animations
