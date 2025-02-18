@@ -10,8 +10,10 @@ public class PlayerHandler : MonoBehaviour
     // [SerializeField] Sound sfx_footsteps_region1;
     // [SerializeField] Sound sfx_footsteps_region4;
 
-    public Vector2 _movementVector;
+    [HideInInspector] public Vector2 _movementVector;
     [HideInInspector] public Rigidbody2D _rb;
+
+    [Header("Configs")]
 
     public static PlayerInput _playerInput;
     bool _canMove = true;
