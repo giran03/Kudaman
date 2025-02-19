@@ -1,0 +1,880 @@
+fileFormatVersion: 2
+guid: 17e4a9d375466814b87c01e8fc6882c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8816822758250337488
+    second: Lyria with contour_0
+  - first:
+      213: -4197445711233573486
+    second: Lyria with contour_1
+  - first:
+      213: 1215886837025507039
+    second: Lyria with contour_2
+  - first:
+      213: -8394223857875150881
+    second: Lyria with contour_3
+  - first:
+      213: 1825478833314245714
+    second: Lyria with contour_4
+  - first:
+      213: -2791131949976503717
+    second: Lyria with contour_5
+  - first:
+      213: -4156494368058783549
+    second: Lyria with contour_6
+  - first:
+      213: -4446310085579305625
+    second: Lyria with contour_7
+  - first:
+      213: -8759337395332827711
+    second: Lyria with contour_8
+  - first:
+      213: 2757593189585112466
+    second: Lyria with contour_9
+  - first:
+      213: -6212557708401883096
+    second: Lyria with contour_10
+  - first:
+      213: 2905735656150945209
+    second: Lyria with contour_11
+  - first:
+      213: 8758401584000788651
+    second: Lyria with contour_12
+  - first:
+      213: -5273254255140635559
+    second: Lyria with contour_13
+  - first:
+      213: -3030829819521479090
+    second: Lyria with contour_14
+  - first:
+      213: -7287279554313128463
+    second: Lyria with contour_15
+  - first:
+      213: 3349084718491820186
+    second: Lyria with contour_16
+  - first:
+      213: 5927250095847591703
+    second: Lyria with contour_17
+  - first:
+      213: 1162800591248591358
+    second: Lyria with contour_18
+  - first:
+      213: -3524600105061685722
+    second: Lyria with contour_19
+  - first:
+      213: -3584379705437860064
+    second: Lyria with contour_20
+  - first:
+      213: -3078432047191442666
+    second: Lyria with contour_21
+  - first:
+      213: 2094611534805899691
+    second: Lyria with contour_22
+  - first:
+      213: -7355313037283216468
+    second: Lyria with contour_23
+  - first:
+      213: 1210633604368473947
+    second: Lyria with contour_24
+  - first:
+      213: -870540727958181976
+    second: Lyria with contour_25
+  - first:
+      213: -4106924651224852987
+    second: Lyria with contour_26
+  - first:
+      213: 3508433859724584369
+    second: Lyria with contour_27
+  - first:
+      213: 2289861261963004122
+    second: Lyria with contour_28
+  - first:
+      213: 3788482409750559437
+    second: Lyria with contour_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lyria with contour_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 447
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ba8e63a6a54a580800000000000000
+      internalID: -8816822758250337488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 447
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d9fe95d5dafb5c0800000000000000
+      internalID: -4197445711233573486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 447
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd68affd2a2bfd010800000000000000
+      internalID: 1215886837025507039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 500
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd71e3230e9b18b80800000000000000
+      internalID: -8394223857875150881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_4
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 496
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ca0bcb357655910800000000000000
+      internalID: 1825478833314245714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_5
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 482
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a38609748e349d0800000000000000
+      internalID: -2791131949976503717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 426
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8c1f0f46a2156c0800000000000000
+      internalID: -4156494368058783549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_7
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 383
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d0fc3e8888b42c0800000000000000
+      internalID: -4446310085579305625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_8
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 426
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c534634c05907680800000000000000
+      internalID: -8759337395332827711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 383
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29dc1444560f44620800000000000000
+      internalID: 2757593189585112466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 426
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82847140eaf88c9a0800000000000000
+      internalID: -6212557708401883096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_11
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 383
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd401c1f2f335820800000000000000
+      internalID: 2905735656150945209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_12
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 319
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8e59e26d71c8970800000000000000
+      internalID: 8758401584000788651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_13
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 319
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c7600a133a1d6b0800000000000000
+      internalID: -5273254255140635559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_14
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 319
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ec2c0565450f5d0800000000000000
+      internalID: -3030829819521479090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_15
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 255
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5f232ead16eda90800000000000000
+      internalID: -7287279554313128463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_16
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 255
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90e468aec65a7e20800000000000000
+      internalID: 3349084718491820186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_17
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 255
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f45e9ee82d14250800000000000000
+      internalID: 5927250095847591703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 191
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef98cf91af8132010800000000000000
+      internalID: 1162800591248591358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 191
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6266e7ae0ea161fc0800000000000000
+      internalID: -3524600105061685722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_20
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 191
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02fc14516a9b14ec0800000000000000
+      internalID: -3584379705437860064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 127
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61bb9f10d563745d0800000000000000
+      internalID: -3078432047191442666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_22
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 127
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba99a8ad71e811d10800000000000000
+      internalID: 2094611534805899691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_23
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 127
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca33fe043cdace990800000000000000
+      internalID: -7355313037283216468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 63
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f988559d80dc010800000000000000
+      internalID: 1210633604368473947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 63
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7ea8bf1d73be3f0800000000000000
+      internalID: -870540727958181976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_26
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 63
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50692740ac54107c0800000000000000
+      internalID: -4106924651224852987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_27
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b526d6c10670b030800000000000000
+      internalID: 3508433859724584369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_28
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad88b308fa837cf10800000000000000
+      internalID: 2289861261963004122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lyria with contour_29
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca7ffeeda4639430800000000000000
+      internalID: 3788482409750559437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

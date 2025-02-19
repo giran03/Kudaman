@@ -1,0 +1,47 @@
+﻿
+title: Start
+position: -89,-99
+---
+<<declare $player_name = "You" as string>>
+<<declare $npc_name_1 = "npc_name_1" as string>>
+// <<set $player_name to "yourplayer_name">> //set to change values
+
+<<ChangeSpeakerImage {$player_name}>>
+{$player_name}:Wow!  #line:09b56d5
+{$player_name}:My first ever Yarn script in Unity!
+{$player_name}:By the way... I'm {$player_name}!
+
+<<ChangeSpeakerImage {$npc_name_1}>>
+{$npc_name_1}:Nice to meet you {$player_name}!
+
+-> Gosh!
+-> Incredible!
+-> I'm amazed!
+
+<<ChangeSpeakerImage {$player_name}>>
+{$player_name}:Anyway, time to get writing!
+
+<<ChangeSpeakerImage {$npc_name_1}>>
+{$npc_name_1}:Good luck!
+
+<<ChangeSpeakerImage {$player_name}>>
+{$player_name}:Thanks!
+
+===
+
+title:Feeling
+position: 148,-96
+---
+
+Hi! how are you?
+I'm Feeling
+-> Incredible!
+-> Wonderful!
+-> Not so much~
+    hmmm...
+        -> What?
+            alright then
+        -> Ehh...
+
+Well, see'ya later then!
+===

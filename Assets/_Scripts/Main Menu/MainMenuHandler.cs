@@ -1,5 +1,6 @@
 using EasyTransition;
 using NUnit.Framework;
+using Tymski;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -15,7 +16,7 @@ public class MainMenuHandler : MonoBehaviour
     [SerializeField] Button creditsButton;
     [SerializeField] Button exitButton;
 
-    [SerializeField] string mainSceneName = "Game";
+    [SerializeField] SceneReference startButtonScene;
     [SerializeField] string instructionsSceneName = "Instructions";
     [SerializeField] string creditsSceneName = "Credits";
 
@@ -46,7 +47,7 @@ public class MainMenuHandler : MonoBehaviour
     {
         // Load the main game scene
         // SceneManager.LoadScene(mainSceneName);
-        TransitionManager.Instance().Transition(mainSceneName, transitionSettings, transitionDelay);
+        TransitionManager.Instance().Transition(startButtonScene, transitionSettings, transitionDelay);
     }
 
     public void GoToInstructions()

@@ -1,0 +1,880 @@
+fileFormatVersion: 2
+guid: 22d7a3e24a3998a48b7e89478343235b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4790772605483156098
+    second: Tori 2 with contour_0
+  - first:
+      213: -6547899280024953005
+    second: Tori 2 with contour_1
+  - first:
+      213: -3799364640236537222
+    second: Tori 2 with contour_2
+  - first:
+      213: -997185389828463536
+    second: Tori 2 with contour_3
+  - first:
+      213: -6981961292906871098
+    second: Tori 2 with contour_4
+  - first:
+      213: -6977052911566082823
+    second: Tori 2 with contour_5
+  - first:
+      213: -3025197848904297620
+    second: Tori 2 with contour_6
+  - first:
+      213: -1258770004612877838
+    second: Tori 2 with contour_7
+  - first:
+      213: -2760361061872218178
+    second: Tori 2 with contour_8
+  - first:
+      213: -1926429724209676328
+    second: Tori 2 with contour_9
+  - first:
+      213: -5873471738991563389
+    second: Tori 2 with contour_10
+  - first:
+      213: -7470495593872178413
+    second: Tori 2 with contour_11
+  - first:
+      213: 7661429917423008461
+    second: Tori 2 with contour_12
+  - first:
+      213: -5157798781347122816
+    second: Tori 2 with contour_13
+  - first:
+      213: -4092006814605420040
+    second: Tori 2 with contour_14
+  - first:
+      213: -2920650852870868644
+    second: Tori 2 with contour_15
+  - first:
+      213: 8839563919389121342
+    second: Tori 2 with contour_16
+  - first:
+      213: 2054680277063261472
+    second: Tori 2 with contour_17
+  - first:
+      213: 2621817177756357523
+    second: Tori 2 with contour_18
+  - first:
+      213: 4378643215743725022
+    second: Tori 2 with contour_19
+  - first:
+      213: 1039954787936277101
+    second: Tori 2 with contour_20
+  - first:
+      213: -4989201203600085457
+    second: Tori 2 with contour_21
+  - first:
+      213: 941789999966674554
+    second: Tori 2 with contour_22
+  - first:
+      213: 375835955524754164
+    second: Tori 2 with contour_23
+  - first:
+      213: 81358586855834660
+    second: Tori 2 with contour_24
+  - first:
+      213: 5280720919190996311
+    second: Tori 2 with contour_25
+  - first:
+      213: -7318286913423219790
+    second: Tori 2 with contour_26
+  - first:
+      213: -3142986193530143606
+    second: Tori 2 with contour_27
+  - first:
+      213: -2971991252478731652
+    second: Tori 2 with contour_28
+  - first:
+      213: 7283112129542885590
+    second: Tori 2 with contour_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tori 2 with contour_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 447
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7df08aa2b1c38db0800000000000000
+      internalID: -4790772605483156098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 447
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f931d0c403125a0800000000000000
+      internalID: -6547899280024953005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 447
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a75865df1f54bc0800000000000000
+      internalID: -3799364640236537222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 500
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054a018db294922f0800000000000000
+      internalID: -997185389828463536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_4
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 496
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c642c432371b1f90800000000000000
+      internalID: -6981961292906871098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_5
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 482
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fcaffac7578c2f90800000000000000
+      internalID: -6977052911566082823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 426
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6398c8a5965406d0800000000000000
+      internalID: -3025197848904297620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_7
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 383
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f1f12d9953f78ee0800000000000000
+      internalID: -1258770004612877838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_8
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 426
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf494f3d3a31b9d0800000000000000
+      internalID: -2760361061872218178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_9
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 383
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df7abb5f52f345e0800000000000000
+      internalID: -1926429724209676328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 426
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38dac17829c3d7ea0800000000000000
+      internalID: -5873471738991563389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_11
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 383
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313c02776d7735890800000000000000
+      internalID: -7470495593872178413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 319
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca7c8bfaedd25a60800000000000000
+      internalID: 7661429917423008461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_13
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 319
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 081bcd6e551db68b0800000000000000
+      internalID: -5157798781347122816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_14
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 319
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f957f48b754637c0800000000000000
+      internalID: -4092006814605420040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_15
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 255
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51b0b90683c777d0800000000000000
+      internalID: -2920650852870868644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_16
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 255
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b5c88fc807caa70800000000000000
+      internalID: 8839563919389121342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_17
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 255
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d5b5963d0b38c10800000000000000
+      internalID: 2054680277063261472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 191
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3935f2a05d0926420800000000000000
+      internalID: 2621817177756357523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_19
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 191
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd24904ec014cc30800000000000000
+      internalID: 4378643215743725022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_20
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 191
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d629865ae59ae6e00800000000000000
+      internalID: 1039954787936277101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_21
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 127
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e277270fbc2cab0800000000000000
+      internalID: -4989201203600085457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_22
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 127
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e5701e309e11d00800000000000000
+      internalID: 941789999966674554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_23
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 127
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa5fde6fcc373500800000000000000
+      internalID: 375835955524754164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 63
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42448f4243b012100800000000000000
+      internalID: 81358586855834660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_25
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 63
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7558a5292b3e84940800000000000000
+      internalID: 5280720919190996311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_26
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 63
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3e40183d8307a90800000000000000
+      internalID: -7318286913423219790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_27
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8cbda095bed164d0800000000000000
+      internalID: -3142986193530143606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_28
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7adf60c3bd51c6d0800000000000000
+      internalID: -2971991252478731652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tori 2 with contour_29
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d01ebce4efc21560800000000000000
+      internalID: 7283112129542885590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

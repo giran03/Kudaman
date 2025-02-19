@@ -1,6 +1,13 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Yarn.Unity;
+
+public interface IInteractable
+{
+    void Interact();
+}
 
 public class PlayerHandler : MonoBehaviour
 {
@@ -13,7 +20,10 @@ public class PlayerHandler : MonoBehaviour
     [HideInInspector] public Vector2 _movementVector;
     [HideInInspector] public Rigidbody2D _rb;
 
-    [Header("Configs")]
+    [Header("Dialogue")]
+    [SerializeField] DialogueRunner dialogueRunner;
+    [SerializeField] string startNode = "Start"; //default starting node
+
 
     public static PlayerInput _playerInput;
     bool _canMove = true;
@@ -34,7 +44,12 @@ public class PlayerHandler : MonoBehaviour
 
     private void Start()
     {
-        // _playerInput.actions["Tap Interaction"].started += ctx => Interact();
+        _playerInput.actions["Tap Interaction"].started += ctx => Interact();
+    }
+
+    private void Interact()
+    {
+        dialogueRunner.StartDialogue(startNode);
     }
 
     private void OnMovement(InputValue value) => _movementVector = value.Get<Vector2>();
@@ -61,6 +76,14 @@ public class PlayerHandler : MonoBehaviour
         // {
         //     _otherGameobject = other.gameObject;
         // }
+
+        if (other.gameObject.layer == LayerMask.NameToLayer("Dialogues"))
+        {
+            _otherGameobject = other.gameObject;
+            Debug.Log($"_otherGameobject.name:{_otherGameobject.name}");
+
+            dialogueRunner.StartDialogue(startNode);
+        }
 
         // if (other.CompareTag("Region"))
         // {
