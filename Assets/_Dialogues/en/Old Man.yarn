@@ -1,0 +1,74 @@
+﻿title: Old_Man
+tags:
+---
+
+//character names
+<<declare $player_name = "Journalist" as string>>
+<<declare $player_image_name = "journalist" as string>>
+
+// old man
+<<declare $oldMan_name = "Old Man" as string>>
+<<declare $profSulayman_name = "Professor Sulayman" as string>>
+<<declare $oldMan_image_name = "oldMan" as string>>
+
+
+// <<CameraSequenceToUse CameraSequenceHandler 0>>
+<<ChangeSpeakerImage {$oldMan_image_name}>>
+{$oldMan_name}:Hohoho! [pause = 800 /]Looks like the wind has delivered me quite the [highlight]interesting puzzle[/highlight].
+{$oldMan_name}:are these your notes?
+
+// ⚠️ manual camera transition on specified target. ManualCameraSequence(sequenceNumber, targetIndex) ⚠️
+<<ManualCameraSequence CameraSequenceHandler 0 2>>  // ⚠️ SAMPLE ONLY | CAN DELETE/MODIFY
+<<ChangeSpeakerImage {$player_image_name}>>
+{$player_name}:(panting, brushing hair back)
+{$player_name}:Y-yeah. [pause = 800 /]Sorry about that. [pause = 600 /]Thanks for grabbing it.
+
+<<ChangeSpeakerImage {$oldMan_image_name}>>
+{$oldMan_name}:(handing the page back) 
+{$oldMan_name}:see you’re trying to write about indigenous stories.
+{$oldMan_name}:noble effort, but from the looks of this… [pause = 600 /]you seem a little lost.
+
+<<ManualCameraSequence CameraSequenceHandler 0 1>>  // ⚠️ SAMPLE ONLY | CAN DELETE/MODIFY
+<<ChangeSpeakerImage {$player_image_name}>>
+{$player_name}:(sheepish smile)
+{$player_name}:Haha.. [pause = 600 /]That obvious, huh? I just don’t know where to start.
+{$player_name}:There are so many versions of these tales, [pause = 600 /]and I [pause = 600 /]don’t want to get anything wrong.
+{$player_name}:I need an angle, [pause = 600 /]something compelling, ya know?
+
+<<ChangeSpeakerImage {$oldMan_image_name}>>
+{$oldMan_name}:(nodding knowingly)
+{$oldMan_name}:A story is best told by those who carry it in their hearts.
+
+// INTRODUCTION OF PROFESSOR SULAYMAN
+<<ManualCameraSequence CameraSequenceHandler 0 0>>  // ⚠️ SAMPLE ONLY | CAN DELETE/MODIFY
+<<ChangeSpeakerImage {$oldMan_image_name}>>
+{$profSulayman_name}:(Warm bright smile)
+{$profSulayman_name}:And fortunately for you, [pause = 600 /]I’ve spent my life studying these tales.
+{$profSulayman_name}:The name’s Impaklud Sulayman.[pause = 600 /]But most just call me "Professor Sulayman"
+
+//choices
+<<ChangeSpeakerImage {$player_image_name}>>
+->Wait, really? You're a scholar?
+    <<ChangeSpeakerImage {$oldMan_image_name}>>
+    {$profSulayman_name}:That’s what they call me, [pause = 600 /]though I prefer ‘storyteller.’ [pause = 600 /]Names are just labels, after all.
+->I could really use your help. Would you be willing to share what you know?
+    <<ChangeSpeakerImage {$oldMan_image_name}>>
+    {$profSulayman_name}:I suppose I could, [pause = 600 /]if you truly wish to listen.
+->What’s the most important thing to understand about these stories?
+    <<ChangeSpeakerImage {$oldMan_image_name}>>
+    {$profSulayman_name}:That they are alive. [pause = 600 /]They are not just words on a page but echoes of those who lived before us.
+
+<<ChangeSpeakerImage {$player_image_name}>>
+{$player_name}:(eagerly)
+{$player_name}:If you don’t mind, [pause = 600 /]could I ask you a few questions?
+{$player_name}:Maybe even get your help in shaping my project?
+
+<<ChangeSpeakerImage {$oldMan_image_name}>>
+{$profSulayman_name}:(smiling)
+{$profSulayman_name}:I’d be honored. [pause = 600 /]Now where to even begin…?
+{$profSulayman_name}:(glancing up at the Balete tree)
+{$profSulayman_name}:let’s start with a story. [pause = 600 /]Do you know of Princess Puteli and Ugkuga?
+
+// NEXT SCENE~
+//Gameplay transitions into the story, fading into a new setting under the Balete tree, where the legend unfolds.
+===

@@ -24,6 +24,11 @@ public class MainMenuHandler : MonoBehaviour
     [SerializeField] TransitionSettings transitionSettings;
     [SerializeField] float transitionDelay;
 
+    [Header("Character Customization")]
+    public int selectedBaseBodyIndex;
+    public int selectedHairIndex;
+    public int selectedClothesIndex;
+
     private void Awake()
     {
         if (_instance != null)
@@ -47,6 +52,13 @@ public class MainMenuHandler : MonoBehaviour
     {
         // Load the main game scene
         // SceneManager.LoadScene(mainSceneName);
+
+        PlayerPrefs.SetInt("selectedBaseBodyIndex", selectedBaseBodyIndex);
+        PlayerPrefs.SetInt("selectedHairIndex", selectedHairIndex);
+        PlayerPrefs.SetInt("selectedClothesIndex", selectedClothesIndex);
+
+        Debug.Log($"Selected indexes: {selectedBaseBodyIndex}, {selectedHairIndex}, {selectedClothesIndex}");
+
         TransitionManager.Instance().Transition(startButtonScene, transitionSettings, transitionDelay);
     }
 

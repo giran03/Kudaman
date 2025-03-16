@@ -1,8 +1,11 @@
-using System;
-using System.Collections;
+using System.Collections.Generic;
+using NaughtyAttributes;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Yarn;
 using Yarn.Unity;
+using Yarn.Unity.Editor;
 
 public interface IInteractable
 {
@@ -12,6 +15,7 @@ public interface IInteractable
 public class PlayerHandler : MonoBehaviour
 {
     [SerializeField] int _speed = 5;
+    [SerializeField] float interactionRadius = 2;
     [Space]
     // Sound _sfx_footsteps;
     // [SerializeField] Sound sfx_footsteps_region1;
@@ -19,16 +23,18 @@ public class PlayerHandler : MonoBehaviour
 
     [HideInInspector] public Vector2 _movementVector;
     [HideInInspector] public Rigidbody2D _rb;
+    [HideInInspector] public Animator animator;
 
     [Header("Dialogue")]
-    [SerializeField] DialogueRunner dialogueRunner;
-    [SerializeField] string startNode = "Start"; //default starting node
-
+    public DialogueRunner dialogueRunner;
 
     public static PlayerInput _playerInput;
     bool _canMove = true;
     bool isFootstepsOnCd;
     GameObject _otherGameobject;
+
+    DialogueAdvanceInput dialogueInput;
+    NPC lastNPC;
 
     private void Awake()
     {
@@ -36,6 +42,8 @@ public class PlayerHandler : MonoBehaviour
         _playerInput = GetComponent<PlayerInput>();
 
         Application.targetFrameRate = 60;
+
+        animator = GetComponent<Animator>();
     }
 
     private void OnEnable() => _playerInput.actions.Enable();
@@ -44,15 +52,19 @@ public class PlayerHandler : MonoBehaviour
 
     private void Start()
     {
-        _playerInput.actions["Tap Interaction"].started += ctx => Interact();
-    }
+        // _playerInput.actions["Tap Interaction"].started += ctx => Interact();
 
-    private void Interact()
-    {
-        dialogueRunner.StartDialogue(startNode);
-    }
+        dialogueInput = FindFirstObjectByType<DialogueAdvanceInput>();
+        dialogueInput.enabled = false;
 
-    private void OnMovement(InputValue value) => _movementVector = value.Get<Vector2>();
+        var circleCollider = GetComponent<CircleCollider2D>();
+        circleCollider.radius = interactionRadius;
+
+        dialogueRunner.onNodeComplete.AddListener(delegate (string nodeName)
+        {
+            Debug.Log($"test {nodeName}");
+        });
+    }
 
     private void Update()
     {
@@ -62,7 +74,27 @@ public class PlayerHandler : MonoBehaviour
         //     if (!isFootstepsOnCd)
         //         StartCoroutine(PlayFootsteps());
         // }
+
+        // Remove all player control when we're in dialogue
+        if (dialogueRunner.IsDialogueRunning == true)
+        {
+            return;
+        }
+
+        // every time we LEAVE dialogue we have to make sure we disable the input again
+        if (dialogueInput.enabled)
+        {
+            dialogueInput.enabled = false;
+        }
+
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            Debug.Log($"Keyboard is pressed in this frame!");
+            CheckForNearbyNPC();
+        }
     }
+
+    private void OnMovement(InputValue value) => _movementVector = value.Get<Vector2>();
 
     private void FixedUpdate()
     {
@@ -72,17 +104,10 @@ public class PlayerHandler : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // if (other.CompareTag("Interactables"))
-        // {
-        //     _otherGameobject = other.gameObject;
-        // }
-
-        if (other.gameObject.layer == LayerMask.NameToLayer("Dialogues"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("NPC"))
         {
-            _otherGameobject = other.gameObject;
-            Debug.Log($"_otherGameobject.name:{_otherGameobject.name}");
-
-            dialogueRunner.StartDialogue(startNode);
+            lastNPC = other.GetComponent<NPC>();
+            other.GetComponent<NPC>().Enable_SpriteQuestionMark();
         }
 
         // if (other.CompareTag("Region"))
@@ -106,10 +131,7 @@ public class PlayerHandler : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        // if (other.CompareTag("Interactables"))
-        // {
-        //     _otherGameobject = null;
-        // }
+        lastNPC?.Disable_SpriteQuestionMark();
     }
 
     // void Interact()
@@ -130,6 +152,9 @@ public class PlayerHandler : MonoBehaviour
     public void EnableMovement()
     {
         _canMove = true;
+        CameraTransition.instance.TransitionToPlayer();
+        lastNPC?.Disable_QuestionMarkBubble();
+        // GameUIControls.instance.ToggleInteractKeyUIButton(true);
     }
 
     // SFX
@@ -140,4 +165,25 @@ public class PlayerHandler : MonoBehaviour
     //     yield return new WaitForSeconds(.75f);
     //     isFootstepsOnCd = false;
     // }
+
+    // DIALOGUES
+    public void CheckForNearbyNPC()
+    {
+        var allParticipants = new List<NPC>(FindObjectsByType<NPC>(FindObjectsSortMode.None));
+        var target = allParticipants.Find(delegate (NPC npc)
+        {
+            return string.IsNullOrEmpty(npc.talkToNode) == false && (npc.transform.position - transform.position).magnitude <= interactionRadius;
+        });
+        if (target != null)
+        {
+            // GameUIControls.instance.ToggleInteractKeyUIButton(false);
+            // Kick off the dialogue at this node.
+            dialogueRunner.StartDialogue(target.talkToNode);
+            // reenabling the input on the dialogue
+            dialogueInput.enabled = true;
+
+            // Transition Camera to the target npc
+            CameraTransition.instance.TransitionToTarget(target.transform);
+        }
+    }
 }

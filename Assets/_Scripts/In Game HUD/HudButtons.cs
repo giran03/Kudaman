@@ -31,7 +31,7 @@ public class HudButtons : MonoBehaviour
         menuResumeButton?.onClick.AddListener(ResumeAsync);
 
         initialPosX = popUpMenuRect.position.x;
-        popUpMenuRect.gameObject.SetActive(false);
+        // popUpMenuRect.gameObject.SetActive(false);
     }
 
     void Update()
@@ -47,7 +47,7 @@ public class HudButtons : MonoBehaviour
 
     void Pause()
     {
-        popUpMenuRect.gameObject.SetActive(true);
+        // popUpMenuRect.gameObject.SetActive(true);
         PopUpMenuIntro();
         isPaused = true;
         Debug.Log($"Game is paused!");
@@ -57,10 +57,10 @@ public class HudButtons : MonoBehaviour
     public async void ResumeAsync()
     {
         await PopUpMenuOutro();
+        Time.timeScale = 1f; // Resume time
         isPaused = false;
         Debug.Log($"Game is not paused!");
-        Time.timeScale = 1f; // Resume time
-        popUpMenuRect.gameObject.SetActive(false);
+        // popUpMenuRect.gameObject.SetActive(false);
     }
 
     public void Restart()

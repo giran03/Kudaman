@@ -1,5 +1,4 @@
-using System.Collections.Generic;
-using NUnit.Framework;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using Yarn;
@@ -11,39 +10,25 @@ public class DialogueConfigsHandler : MonoBehaviour
 {
     [Header("Configs")]
     static Image speakerImageDisplay;
+    [SerializeField] Image _speakerImageDisplay;
 
     [Header("Character Images")]
     static Sprite[] characterSprites;
-
-    [SerializeField] Image _speakerImageDisplay;
     [SerializeField] Sprite[] _characterSprites;
 
     void Start()
     {
         speakerImageDisplay = _speakerImageDisplay;
         characterSprites = _characterSprites;
-
-        Debug.Log($"characterSprites: {characterSprites.Length}");
     }
 
+    /// <summary>
+    /// Changes the speaker image based on the speaker name
+    /// </summary>
+    /// <param name="speakerName">current speaker/character name. Must have same name as the sprite</param>
     [YarnCommand("ChangeSpeakerImage")]
     public static void ChangeSpeakerImage(string speakerName)
     {
-        foreach (Sprite sprite in characterSprites)
-        {
-            Debug.Log($"sprite.name: {sprite.name}");
-            Debug.Log($"speakerName: {speakerName}");
-
-            if (sprite.name == speakerName)
-            {
-                speakerImageDisplay.sprite = sprite;
-                break;
-            }
-            else
-            {
-                speakerImageDisplay.sprite = null;
-                Debug.LogWarning("Speaker image not found!");
-            }
-        }
+        speakerImageDisplay.sprite = characterSprites.FirstOrDefault(sprite => sprite.name == speakerName);
     }
 }
