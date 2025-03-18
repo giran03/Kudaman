@@ -1,11 +1,9 @@
 using System.Collections.Generic;
 using NaughtyAttributes;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Yarn;
 using Yarn.Unity;
-using Yarn.Unity.Editor;
 
 public interface IInteractable
 {

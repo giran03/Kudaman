@@ -27,12 +27,10 @@ public class AutoCameraSequenceTrigger : MonoBehaviour
 
         dialogueRunner = FindFirstObjectByType<DialogueRunner>();
 
+
         if (nodeToStart != null || nodeToStart != "")
             onEndMethods.Add(() => dialogueRunner.StartDialogue(nodeToStart));
-    }
 
-    void OnEnable()
-    {
         CameraSequenceHandler.instance.onCameraSequenceEnd.AddListener(ExecuteFunctions);
     }
 
@@ -58,5 +56,5 @@ public class AutoCameraSequenceTrigger : MonoBehaviour
         }
     }
 
-    void ExecuteFunctions() => onEndMethods.ForEach(f => f());
+    void ExecuteFunctions() => onEndMethods?.ForEach(f => f());
 }

@@ -1,0 +1,31 @@
+﻿title: Scene_3_ClearingThePath
+tags:
+---
+// SAMPLE
+// <<if visited("Scene_3_ClearingThePath") is true>>
+// <<jump Scene_3_ClearingThePath_end>>
+// <<endif>>
+
+{$ugkuga}:(grumbling, annoyed)
+<<set $miniGame_complete to true>>
+{$ugkuga}:sweep the path for me Ukuga!
+{$ugkuga}:...
+{$ugkuga}:I bet being a princess is so easy…
+{$ugkuga}:telling other people to clean up the path for them [pause = 800/]while looking pretty and speaking to spirits...
+
+{$ugkuga}:(Then pauses, a smirk growing on his face)
+{$ugkuga}:And I bet [pause = 800/]Puteli’s future husband will have it just as easy too...
+{$ugkuga}:hmm...
+===
+
+title: Scene_3_ClearingThePath_end
+tags:
+---
+<<if visited("Scene_3_ClearingThePath") is true>>
+
+<<if $miniGame_complete is true>>
+{$ugkuga}:There. [pause = 800/]That path should give me plenty of time to hide
+<<endif>>
+
+<<endif>>
+===

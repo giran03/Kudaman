@@ -122,10 +122,10 @@ TextureImporter:
       name: wood moss_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 17
-        width: 20
-        height: 11
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,10 +144,10 @@ TextureImporter:
       name: wood moss_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 15
-        height: 32
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +166,10 @@ TextureImporter:
       name: wood moss_2
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2
-        width: 23
-        height: 13
+        x: 32
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,11 +184,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: wood moss_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1519783ed1f292f458095178edeb2b15
+      internalID: 161463327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood moss_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f610ab1a7a466c3428604653f0403fb4
+      internalID: 897908401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood moss_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec29ed8e54527964c816ddab3523844d
+      internalID: -1493024756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 75c95c522c64a3e4499b6b028c83fb2c
     internalID: 0
     vertices: []
     indices: 
@@ -201,6 +267,9 @@ TextureImporter:
       wood moss_0: 8291518364167344566
       wood moss_1: 1992724389381749311
       wood moss_2: -7538839333443824725
+      wood moss_3: 161463327
+      wood moss_4: 897908401
+      wood moss_5: -1493024756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -122,10 +122,10 @@ TextureImporter:
       name: Lamp _0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 9
-        height: 12
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,10 +144,10 @@ TextureImporter:
       name: Lamp _1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 2
-        width: 9
-        height: 12
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +166,10 @@ TextureImporter:
       name: Lamp _2
       rect:
         serializedVersion: 2
-        x: 35
-        y: 2
-        width: 9
-        height: 12
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a478cdccb56d5594f9e2df159bb19c6c
     internalID: 0
     vertices: []
     indices: 

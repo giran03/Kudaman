@@ -30,7 +30,7 @@ public class CameraSequenceHandler : MonoBehaviour
     {
         if (sequenceNumber < 0 || sequenceNumber >= cameraSequenceTargets.Count)
         {
-            Debug.LogError("Sequence number out of bounds");
+            Debug.LogError("Sequence number out of bounds, No sequence in this index");
             yield break;
         }
 

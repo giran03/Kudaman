@@ -1,0 +1,34 @@
+﻿title: Variables
+tags:
+---
+
+// 🫧SCENE 1🫧
+// PLAYER
+<<declare $player_name = "Journalist" as string>>
+<<declare $player_image_name = "journalist" as string>>
+
+// Old Man | Professor Sulayman
+<<declare $oldMan_name = "Old Man" as string>>
+<<declare $profSulayman_name = "Professor Sulayman" as string>>
+<<declare $oldMan_image_name = "oldMan" as string>>
+
+// 🫧SCENE 2🫧
+// Ugkuga
+<<declare $ugkuga = "Ugkuga">>
+<<declare $ugkuga_image_name = "ugkuga">>
+
+// Puteli
+<<declare $puteli = "Puteli">>
+<<declare $puteli_image_name = "puteli">>
+
+// main lanawen
+<<declare $maid_lanawen = "Maid Lanawen">>
+<<declare $maid_lanawen_image_name = "maid_lanawen">>
+
+//maid Sulaya
+<<declare $maid_sulaya = "Maid Sulaya">>
+<<declare $maid_sulaya_image_name = "maid_sulaya">>
+
+// 🫧SCENE 3🫧
+<<declare $miniGame_complete = false>>
+===
