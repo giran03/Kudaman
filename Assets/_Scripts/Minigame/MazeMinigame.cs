@@ -3,60 +3,98 @@ using UnityEngine.Tilemaps;
 
 public class MazeMinigame : MonoBehaviour
 {
-    public Tilemap tilemap;
+    [Header("References")]
+    public Tilemap tilemapCollision;
     public TileBase pushableTile;
-    public TileBase placeableTile;
-    public Transform player;
+    public TileBase signTile;
+    public TileBase brokenSignTile;
 
-    void Update()
+    GameObject playerOrigin;
+    bool canPlaceTile = true;
+
+    PlayerHandler playerHandler; // Reference to the PlayerHandler script
+
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            MovePlayer(Vector3Int.up);
-        }
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            MovePlayer(Vector3Int.down);
-        }
-        else if (Input.GetKeyDown(KeyCode.A))
-        {
-            MovePlayer(Vector3Int.left);
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            MovePlayer(Vector3Int.right);
-        }
-        else if (Input.GetKeyDown(KeyCode.Space))
-        {
-            PlaceTile();
-        }
+        playerHandler = FindFirstObjectByType<PlayerHandler>();
+        playerOrigin = GameObject.Find("Player Origin");
     }
 
-    void MovePlayer(Vector3Int direction)
+    public void PlaceSign()
     {
-        Vector3Int playerPos = tilemap.WorldToCell(player.position);
-        Vector3Int targetPos = playerPos + direction;
-        Vector3Int pushPos = playerPos - direction;
+        Vector3Int cellPos = tilemapCollision.WorldToCell(playerOrigin.transform.position);
+        Vector3Int[] directions = { Vector3Int.up, Vector3Int.down, Vector3Int.left, Vector3Int.right };
 
-        if (tilemap.HasTile(targetPos))
+        foreach (Vector3Int direction in directions)
         {
-            TileBase targetTile = tilemap.GetTile(targetPos);
-            if (targetTile == pushableTile)
+            Vector3Int targetPos = cellPos + direction;
+
+            if (tilemapCollision.HasTile(targetPos))
             {
-                if (!tilemap.HasTile(pushPos))
+                TileBase targetTile = tilemapCollision.GetTile(targetPos);
+                if (targetTile == brokenSignTile)
                 {
-                    tilemap.SetTile(pushPos, pushableTile);
-                    tilemap.SetTile(targetPos, null);
+                    tilemapCollision.SetTile(targetPos, signTile);
                 }
             }
         }
-
-        player.position = tilemap.CellToWorld(targetPos) + new Vector3(0.5f, 0.5f, 0);
     }
 
-    void PlaceTile()
+    public void PushAwayFromCurrentCell()
     {
-        Vector3Int playerPos = tilemap.WorldToCell(player.position);
-        tilemap.SetTile(playerPos, placeableTile);
+        Vector3Int cellPos = tilemapCollision.WorldToCell(playerOrigin.transform.position);
+        Vector3Int[] directions = { Vector3Int.up, Vector3Int.down, Vector3Int.left, Vector3Int.right };
+
+        foreach (Vector3Int direction in directions)
+        {
+            Vector3Int targetPos = cellPos + direction;
+
+            if (tilemapCollision.HasTile(targetPos))
+            {
+                TileBase targetTile = tilemapCollision.GetTile(targetPos);
+                if (targetTile == pushableTile)
+                {
+                    Vector3Int pushPos = targetPos + direction;
+                    if (!tilemapCollision.HasTile(pushPos))
+                    {
+                        tilemapCollision.SetTile(pushPos, pushableTile);
+                        tilemapCollision.SetTile(targetPos, null);
+                    }
+                }
+            }
+        }
+    }
+
+    public void PlaceSignAndPushTiles()
+    {
+        Vector3Int cellPos = tilemapCollision.WorldToCell(playerOrigin.transform.position);
+        Vector3Int[] directions = { Vector3Int.up, Vector3Int.down, Vector3Int.left, Vector3Int.right };
+
+        foreach (Vector3Int direction in directions)
+        {
+            Vector3Int targetPos = cellPos + direction;
+
+            if (tilemapCollision.HasTile(targetPos))
+            {
+                TileBase targetTile = tilemapCollision.GetTile(targetPos);
+
+                // Place a sign if the tile is a broken sign
+                if (targetTile == brokenSignTile)
+                {
+                    tilemapCollision.SetTile(targetPos, signTile);
+                }
+
+                // Push the tile if it is a pushable tile
+                if (targetTile == pushableTile)
+                {
+                    Vector3Int pushPos = targetPos + direction;
+                    if (!tilemapCollision.HasTile(pushPos))
+                    {
+                        tilemapCollision.SetTile(pushPos, pushableTile);
+                        tilemapCollision.SetTile(targetPos, null);
+                    }
+                }
+            }
+        }
     }
 }
