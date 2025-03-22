@@ -27,5 +27,21 @@ tags:
 {$ugkuga}:There. [pause = 800/]That path should give me plenty of time to hide
 <<endif>>
 
+<<if $isBush is true>>
+{$ugkuga}:Bit too small to fit me.. Better keep looking
+<<endif>>
+
+<<if $isPutilePath is true>>
+{$ugkuga}:She should be coming soon. I need to find a place to hide
+<<endif>>
+
+<<if $isPathToVillage is true>>
+{$ugkuga}:I don't want to leave just yet...
+<<endif>>
+
+<<if $isBaleteTree is true>>
+{$ugkuga}:These roots should hide me well! Now i’ll just wait...
+<<endif>>
+
 <<endif>>
 ===

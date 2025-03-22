@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using NaughtyAttributes;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Yarn;
@@ -13,7 +14,7 @@ public interface IInteractable
 public class PlayerHandler : MonoBehaviour
 {
     [SerializeField] int _speed = 5;
-    [SerializeField] float interactionRadius = 2;
+    [SerializeField] float interactionRadius;
     [Space]
     // Sound _sfx_footsteps;
     // [SerializeField] Sound sfx_footsteps_region1;
@@ -23,19 +24,18 @@ public class PlayerHandler : MonoBehaviour
     [HideInInspector] public Rigidbody2D _rb;
     [HideInInspector] public Animator animator;
 
-    [Header("Dialogue")]
-    public DialogueRunner dialogueRunner;
-
     public static PlayerInput _playerInput;
     bool _canMove = true;
     bool isFootstepsOnCd;
     GameObject _otherGameobject;
 
+    DialogueRunner dialogueRunner;
     DialogueAdvanceInput dialogueInput;
     NPC lastNPC;
 
     private void Awake()
     {
+        dialogueRunner = FindFirstObjectByType<DialogueRunner>();
         _rb = GetComponent<Rigidbody2D>();
         _playerInput = GetComponent<PlayerInput>();
 
@@ -100,7 +100,7 @@ public class PlayerHandler : MonoBehaviour
             _rb.AddForce(_movementVector * _speed);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("NPC"))
         {
@@ -167,15 +167,18 @@ public class PlayerHandler : MonoBehaviour
     // DIALOGUES
     public void CheckForNearbyNPC()
     {
+        Debug.Log($"Im checking for nearby NPC!");
         var allParticipants = new List<NPC>(FindObjectsByType<NPC>(FindObjectsSortMode.None));
         var target = allParticipants.Find(delegate (NPC npc)
         {
-            return string.IsNullOrEmpty(npc.talkToNode) == false && (npc.transform.position - transform.position).magnitude <= interactionRadius;
+            return string.IsNullOrEmpty(npc.talkToNode) == false && (new Vector2(npc.transform.position.x, npc.transform.position.y) -
+                    new Vector2(transform.position.x, transform.position.y)).magnitude <= interactionRadius;
         });
         if (target != null)
         {
             // GameUIControls.instance.ToggleInteractKeyUIButton(false);
             // Kick off the dialogue at this node.
+            Debug.Log($"dialogueRunner ({dialogueRunner})");
             dialogueRunner.StartDialogue(target.talkToNode);
             // reenabling the input on the dialogue
             dialogueInput.enabled = true;
@@ -183,5 +186,7 @@ public class PlayerHandler : MonoBehaviour
             // Transition Camera to the target npc
             CameraTransition.instance.TransitionToTarget(target.transform);
         }
+        else
+            Debug.Log($"No nearby NPC found!");
     }
 }

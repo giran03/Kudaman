@@ -29,6 +29,17 @@ tags:
 <<declare $maid_sulaya = "Maid Sulaya">>
 <<declare $maid_sulaya_image_name = "maid_sulaya">>
 
+//maid Dangaya
+<<declare $maid_dangaya = "Maid Dangaya">>
+<<declare $maid_dangaya_image_name = "maid_dangaya">>
+
 // 🫧SCENE 3🫧
 <<declare $miniGame_complete = false>>
+<<declare $isBush = false>>
+<<declare $isPutilePath = false>>
+<<declare $isPathToVillage = false>>
+<<declare $isBaleteTree = false>>
+
+// 🫧SCENE 5🫧
+<<declare $chaseDone = false>>
 ===

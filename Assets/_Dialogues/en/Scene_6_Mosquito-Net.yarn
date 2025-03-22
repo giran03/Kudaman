@@ -1,0 +1,94 @@
+﻿title: Scene_6_Mosquito-Net
+tags:
+---
+{$ugkuga}:(Surprised): My lady! I didn’t see you there.
+{$puteli}:I see my maids have given you quite the chase.. Here. For the mosquitoes. As an apology for the trouble that has been caused to you...
+
+<<HideImageHolder>>
+(Puteli walks beside him, and sets up the mosquito net in silence.)
+<<ShowImageHolder>>
+
+{$puteli}:Do you mind if I sit beside you?
+{$ugkuga}:Of course not, your highness
+{$puteli}:Thank you... 
+
+<<HideImageHolder>>
+(She enters the mosquito net and sits down beside him.)
+(They sit for a good 5 seconds of silence after either choice before Puteli speaks again)
+<<ShowImageHolder>>
+
+{$puteli}:The spirits have spoken to me earlier...
+{$ugkuga}:(Acting surprised)And what have they told you, your highness?
+{$puteli}:(calmly)They have chosen you to be my husband
+//choices
+->Have they? //Acting Surprised
+    {$puteli}:(calmly, somber expression): "Yes…and they have spoken with such certainty. No hesitation whatsoever
+    {$ugkuga}:The spirits must have quite the peculiar sense of humor then...
+    {$puteli}:You jest, but they have never been wrong before...
+    {$ugkuga}:And if they are wrong this time?
+    {$puteli}:Then the path I follow would still be my choice, wouldn’t it?
+    {$ugkuga}:And you chose to follow it regardless?
+    {$puteli}:(softly)A princess does not stray from the path given to her
+    {$ugkuga}:Even if that path leads to someone like me?
+    {$puteli}:Even then...
+    {$ugkuga}:Well, your highness, I must say… I admire your devotion
+    {$puteli}:It is not devotion. It is duty
+    {$ugkuga}:(Grinning)Then allow me to be the best burden you will ever bear
+    {$puteli}:(sighing)You already are...
+->Is that so? //Feign Indifference
+    {$puteli}:(calm surprise)you don't seem surprised?
+    {$ugkuga}:Should I be?
+    {$puteli}:Most men would be
+    {$ugkuga}:Perhaps I am not like most men
+    {$puteli}:(slight suspicion)Or perhaps you expected this all along?
+    {$ugkuga}:(smirking)I do have a habit of finding myself in peculiar situations
+    {$puteli}:(slight smile)That you do...
+    {$ugkuga}:And yet, you still sit here with me?
+    {$puteli}:I do
+    {$ugkuga}:Then perhaps the spirits knew you better than you thought
+    {$puteli}:(pauses)Perhaps...
+    {$ugkuga}:Do you regret it?
+    {$puteli}:(Softly)What good would regret do for me?
+    {$ugkuga}:None. But rather you do not resent me either.
+    {$puteli}:Resentment is a choice. And I have made mine
+    {$ugkuga}:Then i suppose i should thank the spirits
+    {$puteli}:(giving him a look)Do not grow arrogant, Ugkuga
+    {$ugkuga}:(grinning)Too late
+    {$puteli}:(Sighing)May the spirits give me patience...
+-> And do you believe them? //Challenge the prophecy
+    {$puteli}:(calmly, somber expression)Does it matter?
+    {$ugkuga}:I think it does
+    {$puteli}:The spirits do not lie.
+    {$ugkuga}:That’s not what I asked
+    {$puteli}:Then what are you asking?
+    {$ugkuga}:Do you want it to be true?
+    {$puteli}:...
+    {$ugkuga}:A prophecy means nothing if you cannot accept it
+    {$puteli}:Acceptance is not the same as desire
+    {$ugkuga}:Then tell me, your highness - What do you desire?
+    {$puteli}:I... (pauses and looks away) It does not matter
+    {$ugkuga}:But it should
+    {$puteli}:(Softly)And if it does?
+    {$ugkuga}:Then perhaps you should consider what you truly want, instead of what you must accept
+    {$puteli}:And what if I cannot tell the difference?
+    {$ugkuga}:Then let me make it easier for you
+    {$puteli}:(Finally meeting his gaze)How?
+    {$ugkuga}:(grinning)By making you forget there was ever a difference.
+    {$puteli}:(Exhales)You are insufferable
+    {$ugkuga}:And yet, you will be stuck with me for eternity
+    {$puteli}:So it seems...
+    {$ugkuga}:Then let us make the best of it, shall we?
+    {$puteli}:... That we shall
+
+(She breaks the silence)
+{$puteli}:Come, lay on me while you rest.
+(She pats her lap invitingly. Ugkuga, tired from the night’s events, doesn’t hesitate.)
+(He rests his head on her lap, closing his eyes as she absentmindedly brushes his hair with her fingers)
+{$puteli}:Ugkuga, I wholeheartedly accept you as my husband for all eternity. For that is what the Great Balete wishes. From this day on, we will share our lives together
+(Ugkuga, still feigning drowsiness, grins to himself)
+{$ugkuga}:Then it seems I truly am the luckiest man alive.
+{$puteli}:Or perhaps… the most cursed.
+{$ugkuga}:(chuckling)Same thing, isn’t it?
+
+//ending tricksters story
+===

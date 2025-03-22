@@ -13,13 +13,16 @@ public class DialogueConfigsHandler : MonoBehaviour
     [SerializeField] Image _speakerImageDisplay;
 
     [Header("Character Images")]
-    static Sprite[] characterSprites;
+    [SerializeField] GameObject _characterImageHolder;
+    static GameObject staticCharacterImageHolder;
     [SerializeField] Sprite[] _characterSprites;
+    static Sprite[] characterSprites;
 
     void Start()
     {
         speakerImageDisplay = _speakerImageDisplay;
         characterSprites = _characterSprites;
+        staticCharacterImageHolder = _characterImageHolder;
     }
 
     /// <summary>
@@ -30,5 +33,17 @@ public class DialogueConfigsHandler : MonoBehaviour
     public static void ChangeSpeakerImage(string speakerName)
     {
         speakerImageDisplay.sprite = characterSprites.FirstOrDefault(sprite => sprite.name == speakerName);
+    }
+
+    [YarnCommand("ShowImageHolder")]
+    public static void ShowImageHolder()
+    {
+        staticCharacterImageHolder.SetActive(true);
+    }
+
+    [YarnCommand("HideImageHolder")]
+    public static void HideImageHolder()
+    {
+        staticCharacterImageHolder.SetActive(false);
     }
 }

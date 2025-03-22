@@ -1,0 +1,34 @@
+﻿title: Scene_4_The-Baletes-Prophecy
+tags:
+---
+{$maid_lanawen}:
+{$maid_sulaya}:
+{$puteli}:
+{$puteli}:
+
+(Ugkuga, hidden among the branches, deepens his voice and answers)
+
+{$ugkuga}(disguised):
+
+(The maids gasp, horrified.)
+
+{$maid_sulaya}:
+{$maid_lanawen}:
+{$maid_dangaya}:
+{$puteli}:
+
+//Optional NPC Interaction: Puteli can ask follow-up questions to the tree
+<<if visited("Scene_4_The-Baletes-Prophecy") is true>>
+->Why Ugkuga?
+    {$ugkuga}(disguised):His heart is strong, and his mind is clever.
+->Is there truly no one else?
+    {$ugkuga}(disguised):Fate cannot be changed, princess...
+->What if I refuse?
+    {$ugkuga}(disguised):The spirits will not be pleased...
+<<endif>>
+
+// (The scene fades out as the characters return to the palace.)
+// (Once the princess and the maids leave, Ugkuga emerges from the tree, taking the shorter path he’s
+// made for himself. Leading to him arriving earlier than the princess and maids back in the royal garden,
+// leaving them surprised and curious of his early arrival)
+===

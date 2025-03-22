@@ -5879,6 +5879,44 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!21 &95567250
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Vortex Game Studios/SpriteSwitch
+  m_Shader: {fileID: 4800000, guid: d10d2a7cc030d034b8b736aede825cc7, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SwitchTex:
+        m_Texture: {fileID: 2800000, guid: a9ea38e6c2361844db6968a3bee60255, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - PixelSnap: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &112738329
 GameObject:
   m_ObjectHideFlags: 0
@@ -62882,6 +62920,44 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!21 &307114463
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Vortex Game Studios/SpriteSwitch
+  m_Shader: {fileID: 4800000, guid: d10d2a7cc030d034b8b736aede825cc7, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SwitchTex:
+        m_Texture: {fileID: 2800000, guid: d932733fdae378f4888d1b7c81c9a1d8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - PixelSnap: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &318589212
 GameObject:
   m_ObjectHideFlags: 0
@@ -63037,44 +63113,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318589212}
   m_CullTransparentMesh: 1
---- !u!21 &325161248
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Vortex Game Studios/SpriteSwitch
-  m_Shader: {fileID: 4800000, guid: d10d2a7cc030d034b8b736aede825cc7, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SwitchTex:
-        m_Texture: {fileID: 2800000, guid: d932733fdae378f4888d1b7c81c9a1d8, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - PixelSnap: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &348178817
 GameObject:
   m_ObjectHideFlags: 0
@@ -75325,44 +75363,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &406727580
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Vortex Game Studios/SpriteSwitch
-  m_Shader: {fileID: 4800000, guid: d10d2a7cc030d034b8b736aede825cc7, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SwitchTex:
-        m_Texture: {fileID: 2800000, guid: a9ea38e6c2361844db6968a3bee60255, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - PixelSnap: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!21 &432336610
 Material:
   serializedVersion: 8
@@ -123738,17 +123738,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2042370213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1432289004 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8328569550913188379, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-  m_PrefabInstance: {fileID: 7999776039494422511}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1504589739
 GameObject:
   m_ObjectHideFlags: 0
@@ -139979,17 +139968,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 559729653001627010, guid: 9c9623057d239ca47a2fa845b4ed0067, type: 3}
   m_PrefabInstance: {fileID: 4598784598264875695}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1957723629 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2583385915689811627, guid: 9c9623057d239ca47a2fa845b4ed0067, type: 3}
-  m_PrefabInstance: {fileID: 4598784598264875695}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7996b38a38500e549b1c13af29bacdac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1988656966
 GameObject:
   m_ObjectHideFlags: 0
@@ -142777,7 +142755,7 @@ PrefabInstance:
     - target: {fileID: 6976184980871000776, guid: 390ab7e1be7bf614580f049f59ea16bd, type: 3}
       propertyPath: _speakerImageDisplay
       value: 
-      objectReference: {fileID: 1432289004}
+      objectReference: {fileID: 0}
     - target: {fileID: 7755966616312850013, guid: 390ab7e1be7bf614580f049f59ea16bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1129.2101
@@ -143411,49 +143389,9 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 738813514296223705, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 1896da74261443e4dba8d4b98bbc242b, type: 2}
-    - target: {fileID: 738813514296223705, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_fontStyle
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 738813514296223705, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 738813514296223705, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 738813514296223705, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 738813514296223705, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 656965383350509477, guid: 1896da74261443e4dba8d4b98bbc242b, type: 2}
-    - target: {fileID: 738813514296223705, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_characterSpacing
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 738813514296223705, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 738813514296223705, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 780516170265571960, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1229241315860893556, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_fontStyle
-      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 1929081165489645520, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
       propertyPath: m_SizeDelta.y
@@ -143463,14 +143401,6 @@ PrefabInstance:
       propertyPath: 'dialogueViews.Array.data[2]'
       value: 
       objectReference: {fileID: 513252604}
-    - target: {fileID: 3121695268234292099, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1957723629}
-    - target: {fileID: 3121695268234292099, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: onDialogueComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1957723629}
     - target: {fileID: 3245651927077388237, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -143489,26 +143419,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3245651927077388237, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4704610716973992918, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_fontStyle
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: 6738844586454081304, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 1896da74261443e4dba8d4b98bbc242b, type: 2}
-    - target: {fileID: 6738844586454081304, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_fontStyle
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 6738844586454081304, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 656965383350509477, guid: 1896da74261443e4dba8d4b98bbc242b, type: 2}
-    - target: {fileID: 6738844586454081304, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}
-      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7642741214882168445, guid: 2d66fb92227e46849aee9b7b3071114f, type: 3}

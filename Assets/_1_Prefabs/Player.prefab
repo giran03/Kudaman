@@ -278,7 +278,6 @@ MonoBehaviour:
   _movementVector: {x: 0, y: 0}
   _rb: {fileID: 0}
   animator: {fileID: 0}
-  dialogueRunner: {fileID: 0}
 --- !u!114 &4046263768078598398
 MonoBehaviour:
   m_ObjectHideFlags: 0
