@@ -1,12 +1,12 @@
 ﻿title: Scene_5_The-Revelation
 tags:
 ---
-{$ugkuga}:Greetings! I have come to share my everlasting love and endearment for Puteli, I have prepared a song for my love.
-{$maid_lanawen}:you are the most incompetent creature I’ve ever met
-{$maid_sulaya}:to think the great balete chose you to be our lady’s husband
-{$maid_dangaya}:COMPLETELY OUTRAGEOUS
+{$ugkuga}:Greetings! I have come to share my everlasting love and endearment for Puteli, I have prepared a song for my love. #line:0b9b6b8 
+{$maid_lanawen}:you are the most incompetent creature I’ve ever met #line:05b74c6 
+{$maid_sulaya}:to think the great balete chose you to be our lady’s husband #line:0ec8374 
+{$maid_dangaya}:COMPLETELY OUTRAGEOUS #line:0e6ca0b 
 
 <<if $chaseDone is true>>
-{$ugkuga}:(Exhasted): Phew, those maids were certainly persistent... Really knocked the wind outta me...
+{$ugkuga}:(Exhasted): Phew, those maids were certainly persistent... Really knocked the wind outta me... #line:07acec9 
 <<endif>>
 ===

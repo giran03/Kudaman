@@ -1,30 +1,32 @@
 ﻿title: Scene_4_The-Baletes-Prophecy
 tags:
 ---
-{$maid_lanawen}:
-{$maid_sulaya}:
-{$puteli}:
-{$puteli}:
+{$maid_lanawen}:Who sweeps in such a strange pattern? #line:0dbc585 
+{$maid_sulaya}:(annoyed) Only Ugkuga. #line:0dd1b67 
+{$puteli}:(calmly) If he did his job, then that is good enough. #line:0540222 
+(Maid 1 & 2, help spread out the tubaw kerchief in front of the tree) #line:0380ac7 
+(Puteli kneels and places a memoon and namat for a betel chew before the tree) #line:0f8af28 
+{$puteli}:O Great Balete, tell me… do you know of the person I am destined to marry? #line:0223c69 
 
-(Ugkuga, hidden among the branches, deepens his voice and answers)
+(Ugkuga, hidden among the branches, deepens his voice and answers) #line:0d496f7 
 
-{$ugkuga}(disguised):
+{$ugkuga}(disguised):The man whom you’re destined to spend an eternity with is... [pause = 800/]Ugkuga! #line:024f2ba 
 
-(The maids gasp, horrified.)
+(The maids gasp, horrified.) #line:0ac1e2b 
 
-{$maid_sulaya}:
-{$maid_lanawen}:
-{$maid_dangaya}:
-{$puteli}:
+{$maid_sulaya}:That fool? #line:0531583 
+{$maid_lanawen}:The princess deserves much better! There must be something wrong! #line:0b0e1bb 
+{$maid_dangaya}:I cannot believe this! Surely you do not believe this, my lady? #line:03f0217 
+{$puteli}:(pauses, deep in thought) If that’s what the great balete sees... [pause = 600/]then it must be the path I am destined to walk on. #line:0c86105 
 
 //Optional NPC Interaction: Puteli can ask follow-up questions to the tree
 <<if visited("Scene_4_The-Baletes-Prophecy") is true>>
-->Why Ugkuga?
-    {$ugkuga}(disguised):His heart is strong, and his mind is clever.
-->Is there truly no one else?
-    {$ugkuga}(disguised):Fate cannot be changed, princess...
-->What if I refuse?
-    {$ugkuga}(disguised):The spirits will not be pleased...
+->Why Ugkuga? #line:0b60d54 
+    {$ugkuga}(disguised):His heart is strong, and his mind is clever. #line:08bb40a 
+->Is there truly no one else? #line:0861ee9 
+    {$ugkuga}(disguised):Fate cannot be changed, princess... #line:045dbbb 
+->What if I refuse? #line:0c90056 
+    {$ugkuga}(disguised):The spirits will not be pleased... #line:06774d4 
 <<endif>>
 
 // (The scene fades out as the characters return to the palace.)

@@ -34,7 +34,7 @@ tags:
 <<declare $maid_dangaya_image_name = "maid_dangaya">>
 
 // 🫧SCENE 3🫧
-<<declare $miniGame_complete = false>>
+<<declare $miniGameComplete = false>>
 <<declare $isBush = false>>
 <<declare $isPutilePath = false>>
 <<declare $isPathToVillage = false>>

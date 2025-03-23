@@ -2,6 +2,6 @@
 tags:
 ---
 <<ChangeSpeakerImage {$player_image_name}>>
-{$player_name}:Hi! im the Journalist. [pause = 800 /]This is a sample auto trigger dialogue.
-{$player_name}:Hope you like it!
+{$player_name}:Hi! im the Journalist. [pause = 800 /]This is a sample auto trigger dialogue. #line:0f22e22 
+{$player_name}:Hope you like it! #line:0a1e60b 
 ===

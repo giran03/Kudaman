@@ -8,24 +8,24 @@ position: -89,-99
 
 <<ChangeSpeakerImage {$player_image_name}>>
 {$player_name}:Wow!  #line:09b56d5
-{$player_name}:My first ever Yarn script in Unity!
-{$player_name}:By the way... I'm {$player_name}!
+{$player_name}:My first ever Yarn script in Unity! #line:0c192aa 
+{$player_name}:By the way... I'm {$player_name}! #line:0aac704 
 
 <<ChangeSpeakerImage {$npc_image_name_1}>>
-{$npc_name_1}:Nice to meet you {$player_name}!
+{$npc_name_1}:Nice to meet you {$player_name}! #line:01cb980 
 
--> Gosh!
--> Incredible!
--> I'm amazed!
+-> Gosh! #line:02644d2 
+-> Incredible! #line:0a9b42e 
+-> I'm amazed! #line:01c78af 
 
 <<ChangeSpeakerImage {$player_image_name}>>
-{$player_name}:Anyway, time to get writing!
+{$player_name}:Anyway, time to get writing! #line:033645d 
 
 <<ChangeSpeakerImage {$npc_image_name_1}>>
-{$npc_name_1}:Good luck!
+{$npc_name_1}:Good luck! #line:0732daa 
 
 <<ChangeSpeakerImage {$player_image_name}>>
-{$player_name}:Thanks!
+{$player_name}:Thanks! #line:08f0f79 
 
 ===
 
@@ -33,15 +33,15 @@ title:Feeling
 position: 148,-96
 ---
 
-Hi! how are you?
-I'm Feeling
--> Incredible!
--> Wonderful!
--> Not so much~
-    hmmm...
-        -> What?
-            alright then
-        -> Ehh...
+Hi! how are you? #line:02f70f3 
+I'm Feeling #line:060e748 
+-> Incredible! #line:063bb40 
+-> Wonderful! #line:08da49e 
+-> Not so much~ #line:062ff72 
+    hmmm... #line:086022c 
+        -> What? #line:04a6e5e 
+            alright then #line:073de28 
+        -> Ehh... #line:08187b9 
 
-Well, see'ya later then!
+Well, see'ya later then! #line:06b1aa3 
 ===

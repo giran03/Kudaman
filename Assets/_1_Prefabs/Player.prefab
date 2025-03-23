@@ -273,6 +273,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7996b38a38500e549b1c13af29bacdac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isUgkuga: 0
+  isPuteli: 0
+  isPlayer: 0
+  isMale: 0
+  isFemale: 0
+  ugkugaSprite: {fileID: 0}
+  puteliSprite: {fileID: 0}
+  playerSprite: {fileID: 0}
   _speed: 32
   interactionRadius: 3
   _movementVector: {x: 0, y: 0}
@@ -298,8 +306,14 @@ MonoBehaviour:
   downAnimatorController: {fileID: 9100000, guid: 8f55b68fb537f09448ab47d6aa9bce06, type: 2}
   leftAnimatorController: {fileID: 9100000, guid: 7fefa74fb6b9adb42965e9573f3223bf, type: 2}
   rightAnimatorController: {fileID: 9100000, guid: 2ff73b6dff7733b41b2e1dbaacf75ba9, type: 2}
-  idleSpriteSheet: {fileID: -8847009744761790242, guid: a9ea38e6c2361844db6968a3bee60255, type: 3}
-  walkSpriteSheet: {fileID: -249218660899659974, guid: d58f324a9d9b52345b2d26242b62070a, type: 3}
+  ugkuga_idleSpriteSheet: {fileID: 0}
+  ugkuga_walkSpriteSheet: {fileID: 0}
+  puteli_idleSpriteSheet: {fileID: 0}
+  puteli_walkSpriteSheet: {fileID: 0}
+  player_male_idleSpriteSheet: {fileID: 0}
+  player_male_walkSpriteSheet: {fileID: 0}
+  player_female_idleSpriteSheet: {fileID: 0}
+  player_female_walkSpriteSheet: {fileID: 0}
 --- !u!1 &7710340497465403251
 GameObject:
   m_ObjectHideFlags: 0

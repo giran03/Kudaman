@@ -2,46 +2,45 @@
 tags:
 ---
 // SAMPLE
-// <<if visited("Scene_3_ClearingThePath") is true>>
-// <<jump Scene_3_ClearingThePath_end>>
-// <<endif>>
+<<if visited("Scene_3_ClearingThePath") is false>>
+    {$ugkuga}:(grumbling, annoyed) #line:0e6a109 
+    {$ugkuga}:sweep the path for me Ukuga! [pause = 500/]I bet being a princess is so easy, telling other people to clean up the path for them [pause = 400/]while looking pretty and speaking to spirits... #line:042fedc 
 
-{$ugkuga}:(grumbling, annoyed)
-<<set $miniGame_complete to true>>
-{$ugkuga}:sweep the path for me Ukuga!
-{$ugkuga}:...
-{$ugkuga}:I bet being a princess is so easy…
-{$ugkuga}:telling other people to clean up the path for them [pause = 800/]while looking pretty and speaking to spirits...
+    {$ugkuga}:(Then pauses, a smirk growing on his face) #line:0c1f7ff 
+    {$ugkuga}:And I bet [pause = 800/]Puteli’s future husband will have it just as easy too... hmm... #line:08e511a 
 
-{$ugkuga}:(Then pauses, a smirk growing on his face)
-{$ugkuga}:And I bet [pause = 800/]Puteli’s future husband will have it just as easy too...
-{$ugkuga}:hmm...
+    <<startMazeMinigame>>
+<<else>>
+    <<jump Scene_3_ClearingThePath_end>>
+<<endif>>
 ===
 
 title: Scene_3_ClearingThePath_end
 tags:
 ---
-<<if visited("Scene_3_ClearingThePath") is true>>
-
-<<if $miniGame_complete is true>>
-{$ugkuga}:There. [pause = 800/]That path should give me plenty of time to hide
+<<if isPuzzleCompleted() is true>>
+    {$ugkuga}:There. [pause = 800/]That path should give me plenty of time to hide #line:096d2b9 
+    <<endMazeMinigame>>
+<<else>>
+    {$ugkuga}:I should finish sweeping the path #line:0e7c71e //adlib
 <<endif>>
+... #line:0dad7aa 
+<<stop>>
 
+// ⚠️ ???? ⚠️
 <<if $isBush is true>>
-{$ugkuga}:Bit too small to fit me.. Better keep looking
+{$ugkuga}:Bit too small to fit me.. Better keep looking #line:02959a3 
 <<endif>>
 
 <<if $isPutilePath is true>>
-{$ugkuga}:She should be coming soon. I need to find a place to hide
+{$ugkuga}:She should be coming soon. I need to find a place to hide #line:0bd5440 
 <<endif>>
 
 <<if $isPathToVillage is true>>
-{$ugkuga}:I don't want to leave just yet...
+{$ugkuga}:I don't want to leave just yet... #line:05a54a9 
 <<endif>>
 
 <<if $isBaleteTree is true>>
-{$ugkuga}:These roots should hide me well! Now i’ll just wait...
-<<endif>>
-
+{$ugkuga}:These roots should hide me well! Now i’ll just wait... #line:0629a83 
 <<endif>>
 ===
