@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: RoyalGardenMorning
+  m_Name: UniversityPP
   m_EditorClassIdentifier: 
   components:
   - {fileID: 9036027431748442527}
@@ -160,10 +160,10 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: -1.88
+    m_Value: -1.07
   contrast:
     m_OverrideState: 1
-    m_Value: 14.8
+    m_Value: -11.72
   colorFilter:
     m_OverrideState: 0
     m_Value: {r: 0.0625, g: 0.0625, b: 0.0625, a: 1}

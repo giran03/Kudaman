@@ -46,8 +46,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 6579643207664292692}
+  sfxSource: {fileID: 0}
+  ambientSource: {fileID: 0}
   fadeDuration: 1
-  defaultVolume: 0.5
+  defaultMusicVolume: 0.5
+  defaultSFXVolume: 0.7
+  defaultAmbientVolume: 0.4
 --- !u!82 &6579643207664292692
 AudioSource:
   m_ObjectHideFlags: 0
@@ -63,7 +67,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
