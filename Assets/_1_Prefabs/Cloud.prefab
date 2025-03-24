@@ -103,3 +103,4 @@ MonoBehaviour:
   floatStrength: 0.5
   floatDistance: 0.2
   moveSpeed: 0.6
+  moveDirection: {x: -1, y: 0, z: 0}

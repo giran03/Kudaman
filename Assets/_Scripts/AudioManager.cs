@@ -6,12 +6,19 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
 
-    [Header("Audio Settings")]
+    [Header("Audio Sources")]
     [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource sfxSource;
+    [SerializeField] private AudioSource ambientSource;
+
+    [Header("Audio Settings")]
     [SerializeField] private float fadeDuration = 1f;
-    [SerializeField] private float defaultVolume = 0.5f;
+    [SerializeField] private float defaultMusicVolume = 0.5f;
+    [SerializeField] private float defaultSFXVolume = 0.7f;
+    [SerializeField] private float defaultAmbientVolume = 0.4f;
 
     private AudioClip currentMusicClip;
+    private AudioClip currentAmbientClip;
     private Coroutine fadeCoroutine;
 
     private void Awake()
@@ -23,11 +30,26 @@ public class AudioManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             
             // Create audio source if not assigned
+            // Initialize audio sources if not assigned
             if (musicSource == null)
             {
                 musicSource = gameObject.AddComponent<AudioSource>();
                 musicSource.loop = true;
-                musicSource.volume = defaultVolume;
+                musicSource.volume = defaultMusicVolume;
+            }
+
+            if (sfxSource == null)
+            {
+                sfxSource = gameObject.AddComponent<AudioSource>();
+                sfxSource.loop = false;
+                sfxSource.volume = defaultSFXVolume;
+            }
+
+            if (ambientSource == null)
+            {
+                ambientSource = gameObject.AddComponent<AudioSource>();
+                ambientSource.loop = true;
+                ambientSource.volume = defaultAmbientVolume;
             }
 
             // Subscribe to scene loading events
@@ -87,9 +109,25 @@ public class AudioManager : MonoBehaviour
         else
         {
             musicSource.clip = musicClip;
-            musicSource.volume = defaultVolume;
+            musicSource.volume = defaultMusicVolume;
             musicSource.Play();
         }
+    }
+
+    public void PlaySFX(AudioClip sfxClip)
+    {
+        if (sfxClip == null) return;
+        sfxSource.PlayOneShot(sfxClip, defaultSFXVolume);
+    }
+
+    public void PlayAmbient(AudioClip ambientClip)
+    {
+        if (ambientClip == null) return;
+
+        currentAmbientClip = ambientClip;
+        ambientSource.clip = ambientClip;
+        ambientSource.volume = defaultAmbientVolume;
+        ambientSource.Play();
     }
 
     public void StopMusic()
@@ -128,11 +166,11 @@ public class AudioManager : MonoBehaviour
         while (timeElapsed < fadeDuration)
         {
             timeElapsed += Time.deltaTime;
-            musicSource.volume = Mathf.Lerp(0f, defaultVolume, timeElapsed / fadeDuration);
+            musicSource.volume = Mathf.Lerp(0f, defaultMusicVolume, timeElapsed / fadeDuration);
             yield return null;
         }
 
-        musicSource.volume = defaultVolume;
+        musicSource.volume = defaultMusicVolume;
         fadeCoroutine = null;
     }
 
