@@ -50,15 +50,6 @@ public class MainMenuHandler : MonoBehaviour
 
     public void PlayGame()
     {
-        // Load the main game scene
-        // SceneManager.LoadScene(mainSceneName);
-
-        PlayerPrefs.SetInt("selectedBaseBodyIndex", selectedBaseBodyIndex);
-        PlayerPrefs.SetInt("selectedHairIndex", selectedHairIndex);
-        PlayerPrefs.SetInt("selectedClothesIndex", selectedClothesIndex);
-
-        Debug.Log($"Selected indexes: {selectedBaseBodyIndex}, {selectedHairIndex}, {selectedClothesIndex}");
-
         TransitionManager.Instance().Transition(startButtonScene, transitionSettings, transitionDelay);
     }
 

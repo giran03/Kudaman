@@ -15,23 +15,33 @@ tags:
 // 🫧SCENE 2🫧
 // Ugkuga
 <<declare $ugkuga = "Ugkuga">>
-<<declare $ugkuga_image_name = "ugkuga">>
+<<declare $ugkuga_image_name_0 = "ugkuga-dialogue_0">>
+<<declare $ugkuga_image_name_1 = "ugkuga-dialogue_1">>
+<<declare $ugkuga_image_name_2 = "ugkuga-dialogue_2">>
+<<declare $ugkuga_image_name_3 = "ugkuga-dialogue_3">>
 
 // Puteli
 <<declare $puteli = "Puteli">>
 <<declare $puteli_image_name = "puteli">>
+<<declare $PrincessPuteli_Dialogue_Sprites_0 = "PrincessPuteli-Dialogue-Sprites_0">>
+<<declare $PrincessPuteli_Dialogue_Sprites_1 = "PrincessPuteli-Dialogue-Sprites_1">>
+<<declare $PrincessPuteli_Dialogue_Sprites_2 = "PrincessPuteli-Dialogue-Sprites_2">>
+<<declare $PrincessPuteli_Dialogue_Sprites_3 = "PrincessPuteli-Dialogue-Sprites_3">>
 
 // main lanawen
 <<declare $maid_lanawen = "Maid Lanawen">>
-<<declare $maid_lanawen_image_name = "maid_lanawen">>
+<<declare $MaidLanawen_dialogue_0 = "MaidLanawen-dialogue_0">>
+<<declare $MaidLanawen_dialogue_1 = "MaidLanawen-dialogue_1">>
 
 //maid Sulaya
 <<declare $maid_sulaya = "Maid Sulaya">>
-<<declare $maid_sulaya_image_name = "maid_sulaya">>
+<<declare $MaidSulaya_dialogue_0 = "MaidSukaya-dialogue_0">>
+<<declare $MaidSulaya_dialogue_1 = "MaidSukaya-dialogue_1">>
 
 //maid Dangaya
 <<declare $maid_dangaya = "Maid Dangaya">>
-<<declare $maid_dangaya_image_name = "maid_dangaya">>
+<<declare $maidDangaya_dialogue_0 = "maidDangaya-dialogue_0">>
+<<declare $maidDangaya_dialogue_1 = "maidDangaya-dialogue_1">>
 
 // 🫧SCENE 3🫧
 <<declare $miniGameComplete = false>>

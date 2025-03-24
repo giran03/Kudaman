@@ -45,7 +45,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speakerImageDisplay: {fileID: 0}
+  _characterImageHolder: {fileID: 0}
   _characterSprites:
   - {fileID: 21300000, guid: 6460bc5f2eed6b04a86f84636474c4ba, type: 3}
   - {fileID: 21300000, guid: 9368a6c4a7fe30942a0238d5bc1020f3, type: 3}
   - {fileID: 21300000, guid: 4821f318b7dfa1c48808872c8b916c73, type: 3}
+  - {fileID: 3211145906649439968, guid: efbec835bee9f784b831a008c5ea758d, type: 3}
+  - {fileID: -808924601305429268, guid: efbec835bee9f784b831a008c5ea758d, type: 3}
+  - {fileID: -5168360847614392755, guid: efbec835bee9f784b831a008c5ea758d, type: 3}
+  - {fileID: -5026108845175995193, guid: efbec835bee9f784b831a008c5ea758d, type: 3}
+  - {fileID: 1493336428017074284, guid: e70071d45a029ed4ca49dabae9aaf06e, type: 3}
+  - {fileID: -1753758522816108497, guid: e70071d45a029ed4ca49dabae9aaf06e, type: 3}
+  - {fileID: 5616934396509747999, guid: e70071d45a029ed4ca49dabae9aaf06e, type: 3}
+  - {fileID: -1022370146477437270, guid: e70071d45a029ed4ca49dabae9aaf06e, type: 3}
+  - {fileID: 6879814590033931811, guid: 560034eb5b82c3c44b5e6360dfb66b0f, type: 3}
+  - {fileID: -2137393137659087254, guid: 560034eb5b82c3c44b5e6360dfb66b0f, type: 3}
+  - {fileID: -7829983258499649662, guid: c30e044f4dafd0540a0733a512c21dfb, type: 3}
+  - {fileID: -1502459563303020067, guid: c30e044f4dafd0540a0733a512c21dfb, type: 3}
+  - {fileID: -465622386247318228, guid: 71f753b0b0b4241488a8087153997bd0, type: 3}
+  - {fileID: 2086021936854638080, guid: 71f753b0b0b4241488a8087153997bd0, type: 3}
