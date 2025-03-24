@@ -15,7 +15,7 @@ tags:
 <<endif>>
 ===
 
-title: Scene_3_ClearingThePath_end
+title: Scene_3_ClearingThePath_cleared
 tags:
 ---
 <<if isPuzzleCompleted() is true>>
@@ -39,8 +39,10 @@ tags:
 <<if $isPathToVillage is true>>
 {$ugkuga}:I don't want to leave just yet... #line:05a54a9 
 <<endif>>
-
-<<if $isBaleteTree is true>>
-{$ugkuga}:These roots should hide me well! Now i’ll just wait... #line:0629a83 
-<<endif>>
+===
+title:isBaleteTree
+tags:
+---
+<<ChangeSpeakerImage {$ugkuga_image_name_0}>>
+{$ugkuga}:These roots should hide me well! Now i’ll just wait... #line:0629a83
 ===

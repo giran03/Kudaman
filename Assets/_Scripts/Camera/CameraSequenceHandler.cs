@@ -26,21 +26,23 @@ public class CameraSequenceHandler : MonoBehaviour
     }
 
     /// <summary> Use this function to automatically trigger a camera sequence. </summary>
-    public IEnumerator AutoCameraSequence(int sequenceNumber)    // (optional) specific function to call after sequence ends
+    public IEnumerator AutoCameraSequence(int sequenceNumber)
     {
         if (sequenceNumber < 0 || sequenceNumber >= cameraSequenceTargets.Count)
         {
-            Debug.LogError("Sequence number out of bounds, No sequence in this index");
-            yield break;
+            Debug.LogWarning("Sequence number out of bounds, No sequence in this index");
+            // yield break;
         }
-
-        CameraSequenceTarget target = cameraSequenceTargets[sequenceNumber];
-        // Transition to the current target
-        foreach (var gameObjectTransforms in target.cameraTargets)
+        else
         {
-            CameraTransition.instance.TransitionToTarget(gameObjectTransforms);
-            // Wait for the specified duration before transitioning to the next target
-            yield return new WaitForSeconds(transitionDuration);
+            CameraSequenceTarget target = cameraSequenceTargets[sequenceNumber];
+            // Transition to the current target
+            foreach (var gameObjectTransforms in target.cameraTargets)
+            {
+                CameraTransition.instance.TransitionToTarget(gameObjectTransforms);
+                // Wait for the specified duration before transitioning to the next target
+                yield return new WaitForSeconds(transitionDuration);
+            }
         }
 
         // Transition back to the player after the sequence is complete

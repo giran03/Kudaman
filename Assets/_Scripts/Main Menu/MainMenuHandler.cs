@@ -50,7 +50,8 @@ public class MainMenuHandler : MonoBehaviour
 
     public void PlayGame()
     {
-        TransitionManager.Instance().Transition(startButtonScene, transitionSettings, transitionDelay);
+        // TransitionManager.Instance().Transition(startButtonScene, transitionSettings, transitionDelay);
+        SceneHandler.Instance.LoadSceneWithTransition(startButtonScene.ScenePath);
     }
 
     public void GoToInstructions()

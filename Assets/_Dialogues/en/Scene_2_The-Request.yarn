@@ -65,7 +65,10 @@ tags:
 <<ChangeSpeakerImage {$MaidSulaya_dialogue_0}>>
 {$maid_sulaya}:All he does is lounge around and eat all the mangoes from the royal garden! #line:0215c2e 
 <<ChangeSpeakerImage {$MaidSulaya_dialogue_1}>>
-{$maid_sulaya}:Surely some discipline would do him good. #line:0385a2f 
+{$maid_sulaya}:Surely some discipline would do him good. #line:0385a2f
+
+<<EnableSceneChangeTrigger SceneChangeTrigger>>
+
 <<else>>
     <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_3}>>
     {$puteli}:You should get going now...

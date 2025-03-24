@@ -1,0 +1,27 @@
+﻿title: Scene_1_Introduction
+tags:
+---
+<<ShowImageHolder>>
+<<ChangeSpeakerImage {$player_image_name}>>
+{$player_name}:(muttering to themselves) “Ugh, why did i even pick this topic? ‘The Stories of Indigenous Culture’
+{$player_name}:sounds fascinating, sure, but where do I even begin?
+{$player_name}:The internet barely scratches the surface, and the books in the library just repeat the same old legends...
+
+<<HideImageHolder>>
+(A gust of wind suddenly picks up, scattering their notes. Pages flutter in all directions...)
+(One landing at the feet of an old man sitting on a bench beneath a towering Balete tree.)
+
+<<ShowImageHolder>>
+<<ChangeSpeakerImage {$player_image_name}>>
+{$player_name}:(frantically chasing after pages) No, no, no! Come back here!
+
+<<TriggerAnimation PaperHolder FlyPaper>>
+<<ManualCameraSequence CameraSequenceHandler 1 0>>
+<<PlayAnimationDialogue PaperHolder FlyPaper>>
+
+<<HideImageHolder>>
+(An old man wearing simple but dignified clothing walks by, seeing the flying paper in the wind, he stops in his path, picking up the nearest page)
+(He adjusts his glasses and scans the messy scribbles before looking up at the journalist with mild amusement)
+
+<<DisableAfterAnimation PaperHolder FlyPaper>>
+===

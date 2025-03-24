@@ -22,6 +22,6 @@ public class NPC : MonoBehaviour
             bubble_questionMark.GetComponent<SpriteRenderer>().enabled = false;
     }
 
-    public void Disable_QuestionMarkBubble() => bubble_questionMark.SetActive(false);
-    public void Enable_QuestionMarkBubble() => bubble_questionMark.SetActive(true);
+    public void Disable_QuestionMarkBubble() => bubble_questionMark?.SetActive(false);
+    public void Enable_QuestionMarkBubble() => bubble_questionMark?.SetActive(true);
 }

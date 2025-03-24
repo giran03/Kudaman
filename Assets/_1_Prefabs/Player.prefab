@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 7487851661406922664}
   - component: {fileID: 2583385915689811627}
   - component: {fileID: 4046263768078598398}
+  - component: {fileID: 9174470335933563473}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -157,8 +158,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.08532989}
-  m_Size: {x: 1, y: 1.8293402}
+  m_Offset: {x: 0, y: -0.08}
+  m_Size: {x: 0.61, y: 1.51}
   m_Direction: 0
 --- !u!58 &4585655760849853130
 CircleCollider2D:
@@ -275,12 +276,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUgkuga: 0
   isPuteli: 0
-  isPlayer: 0
+  isPlayer: 1
   isMale: 0
-  isFemale: 0
-  ugkugaSprite: {fileID: 0}
-  puteliSprite: {fileID: 0}
-  playerSprite: {fileID: 0}
+  isFemale: 1
+  ugkugaSprite: {fileID: 6289842542534860394, guid: 041a3ce2fabffad4db5b303b74bf9260, type: 3}
+  puteliSprite: {fileID: -4195579314422226629, guid: 8ded76173adc1a747a34571800ed544a, type: 3}
+  playerSprite: {fileID: -8847009744761790242, guid: a9ea38e6c2361844db6968a3bee60255, type: 3}
   _speed: 32
   interactionRadius: 3
   _movementVector: {x: 0, y: 0}
@@ -306,14 +307,56 @@ MonoBehaviour:
   downAnimatorController: {fileID: 9100000, guid: 8f55b68fb537f09448ab47d6aa9bce06, type: 2}
   leftAnimatorController: {fileID: 9100000, guid: 7fefa74fb6b9adb42965e9573f3223bf, type: 2}
   rightAnimatorController: {fileID: 9100000, guid: 2ff73b6dff7733b41b2e1dbaacf75ba9, type: 2}
-  ugkuga_idleSpriteSheet: {fileID: 0}
-  ugkuga_walkSpriteSheet: {fileID: 0}
-  puteli_idleSpriteSheet: {fileID: 0}
-  puteli_walkSpriteSheet: {fileID: 0}
-  player_male_idleSpriteSheet: {fileID: 0}
-  player_male_walkSpriteSheet: {fileID: 0}
-  player_female_idleSpriteSheet: {fileID: 0}
-  player_female_walkSpriteSheet: {fileID: 0}
+  ugkuga_idleSpriteSheet: {fileID: 6289842542534860394, guid: 041a3ce2fabffad4db5b303b74bf9260, type: 3}
+  ugkuga_walkSpriteSheet: {fileID: 6289842542534860394, guid: 041a3ce2fabffad4db5b303b74bf9260, type: 3}
+  puteli_idleSpriteSheet: {fileID: -4195579314422226629, guid: 8ded76173adc1a747a34571800ed544a, type: 3}
+  puteli_walkSpriteSheet: {fileID: -4195579314422226629, guid: 8ded76173adc1a747a34571800ed544a, type: 3}
+  player_male_idleSpriteSheet: {fileID: -8847009744761790242, guid: a9ea38e6c2361844db6968a3bee60255, type: 3}
+  player_male_walkSpriteSheet: {fileID: -249218660899659974, guid: d58f324a9d9b52345b2d26242b62070a, type: 3}
+  player_female_idleSpriteSheet: {fileID: 4614930000207874894, guid: 518d36624d026f24a919ad1c6bd2f7cf, type: 3}
+  player_female_walkSpriteSheet: {fileID: -9165229127511632516, guid: 833f25e5ccb0a4448a924c2fbb915f3a, type: 3}
+--- !u!114 &9174470335933563473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4184775647960884170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f11373ee178a3a4394c6c8a0c0a9a4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnMazeMiniGameStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnMazeMiniGameEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7710340497465403251
 GameObject:
   m_ObjectHideFlags: 0
