@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6200574559758778805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3366347741738812153}
+  - component: {fileID: 5230466019618282287}
+  - component: {fileID: 5679713300098135545}
+  m_Layer: 0
+  m_Name: Sound Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3366347741738812153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200574559758778805}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.68452406, y: 17.102558, z: 0.46547177}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5230466019618282287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200574559758778805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2920cbdc410b8c84e825a27de1cfb6d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transform: {fileID: 0}
+  audioSourcePrefab: {fileID: 1238327444169931807, guid: fa48d6136a363904d957ac3bfe3a070a, type: 3}
+--- !u!114 &5679713300098135545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200574559758778805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0017a3adc24464f9e4d967fcbe33fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfx:
+  - <Audio>k__BackingField: {fileID: 8300000, guid: 07e4200b8db1d344da0e45284621c763, type: 3}
+    <Volume>k__BackingField: 1
+    <Range>k__BackingField: 100
+  - <Audio>k__BackingField: {fileID: 8300000, guid: 31a3ddfdd372b1141b18e1124ebf37c8, type: 3}
+    <Volume>k__BackingField: 1
+    <Range>k__BackingField: 100
+  - <Audio>k__BackingField: {fileID: 8300000, guid: 7880433138bac76458a75021661c0384, type: 3}
+    <Volume>k__BackingField: 1
+    <Range>k__BackingField: 100
+  - <Audio>k__BackingField: {fileID: 8300000, guid: 00f688cd4c731f244a2de05863b3363f, type: 3}
+    <Volume>k__BackingField: 1
+    <Range>k__BackingField: 100
+  - <Audio>k__BackingField: {fileID: 8300000, guid: d32a1838589c4ce4aa7879335938ef9a, type: 3}
+    <Volume>k__BackingField: 1
+    <Range>k__BackingField: 100
+  - <Audio>k__BackingField: {fileID: 8300000, guid: a51d7a66a38494d47b7369b25023f527, type: 3}
+    <Volume>k__BackingField: 1
+    <Range>k__BackingField: 100
