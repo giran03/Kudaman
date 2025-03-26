@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b23c74de76c77428f4f9bb337136ce, type: 3}
   m_Name: Line1
   m_EditorClassIdentifier: 
+  voiceOver: {fileID: 8300000, guid: f945d5b250fbbc64884855c0e0228fc1, type: 3}
   _dialogue:
   - lines:
     - speakerName: Shieldane
