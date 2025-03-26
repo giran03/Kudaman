@@ -41,8 +41,8 @@ tags:
 
 //maid Dangaya
 <<declare $maid_dangaya = "Maid Dangaya">>
-<<declare $maidDangaya_dialogue_0 = "maidDangaya-dialogue_0">>
-<<declare $maidDangaya_dialogue_1 = "maidDangaya-dialogue_1">>
+<<declare $maidDangaya_dialogue_0 = "maidDangaya-dialogie_0">>
+<<declare $maidDangaya_dialogue_1 = "maidDangaya-dialogie_1">>
 
 // 🫧SCENE 3🫧
 <<declare $miniGameComplete = false>>

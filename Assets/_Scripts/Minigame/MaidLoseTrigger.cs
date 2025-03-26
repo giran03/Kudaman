@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.AdaptivePerformance.VisualScripting;
+using Yarn.Unity;
 
 public class MaidLoseTrigger : MonoBehaviour
 {
-    CircleCollider2D circleCollider2D;
+    static CircleCollider2D circleCollider2D;
 
     void Awake()
     {
@@ -11,9 +12,11 @@ public class MaidLoseTrigger : MonoBehaviour
         circleCollider2D.enabled = false;
     }
 
-    public void EnableLooseTrigger() => circleCollider2D.enabled = true;
+    [YarnCommand("EnableLoseTrigger_ChaseMinigame")]
+    public static void EnableLoseTrigger() => circleCollider2D.enabled = true;
 
-    public void DisableLooseTrigger() => circleCollider2D.enabled = false;
+    [YarnCommand("DisableLoseTrigger_ChaseMinigame")]
+    public static void DisableLoseTrigger() => circleCollider2D.enabled = false;
 
     void OnTriggerEnter2D(Collider2D collision)
     {

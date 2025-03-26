@@ -15,7 +15,7 @@ public class PlayerColliderGate : MonoBehaviour
     private void Start()
     {
         shortcutGate.ForEach(gate => gate.SetActive(false));
-    }
+    } 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

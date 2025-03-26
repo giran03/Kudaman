@@ -1,6 +1,7 @@
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Events;
+using Yarn.Unity;
 
 public class ChaseMinigame : MonoBehaviour
 {
@@ -81,6 +82,7 @@ public class ChaseMinigame : MonoBehaviour
     }
 
     [Button]
+    [YarnCommand("StartChaseMinigame")]
     public void StartMinigame()
     {
         if (isMinigameActive) return;
@@ -105,10 +107,10 @@ public class ChaseMinigame : MonoBehaviour
         // Reset positions if the player loses
         if (!playerWon)
         {
-            ResetPositions();
-
             // Trigger the player lose event
             onPlayerLose?.Invoke();
+
+            ResetPositions();
         }
 
         // Trigger the end event
