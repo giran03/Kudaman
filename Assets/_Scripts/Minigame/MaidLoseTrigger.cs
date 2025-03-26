@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.AdaptivePerformance.VisualScripting;
 using Yarn.Unity;
 
 public class MaidLoseTrigger : MonoBehaviour

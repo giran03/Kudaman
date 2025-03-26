@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Threading.Tasks;
 using DG.Tweening;
-using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -32,17 +30,6 @@ public class HudButtons : MonoBehaviour
 
         initialPosX = popUpMenuRect.position.x;
         // popUpMenuRect.gameObject.SetActive(false);
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape)) // Toggle pause with ESC key
-        {
-            if (isPaused)
-                ResumeAsync();
-            else
-                Pause();
-        }
     }
 
     void Pause()

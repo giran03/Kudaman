@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
@@ -251,6 +250,8 @@ public class PlayerHandler : MonoBehaviour
         IsMazeMinigameActive = false;
         playerEvents.OnMazeMiniGameEnd?.Invoke();
     }
+
+    public void EnablePlayerInput() => _playerInput.enabled = true;
 
     public void DisableTransitionToSelf() => transitionAfterDialogue = false;
 

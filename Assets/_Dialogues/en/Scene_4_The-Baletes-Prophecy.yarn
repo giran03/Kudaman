@@ -20,6 +20,9 @@ title:puteliInteractionWithBalete
 ---
 <<OnPuteliBaleteInteractStart Player_1>>
 
+//TODO:REMOVE
+<<stop>>
+
 <<if visited("puteliInteractionWithBalete") is true>>
 <<jump baleteChoices>>
 <<endif>>
@@ -71,10 +74,12 @@ title:baleteChoices
 
 title:puteliEndingScene4
 ---
+<<OnPlayerCameraSequenceTriggerStart Player_1>>
 <<HideImageHolder>>
 (Puteli and the maids returns to the castle) #line:0c99e30 
 (Ugkuga emerges from the tree after Puteli and the maids make their journey) #line:0783a9e 
 <<ShowImageHolder>>
+<<OnPlayerCameraSequenceTriggerEnd Player_1>>
 <<Disable_Puteli_2 Puteli_Ending_Trigger>>
 ===
 

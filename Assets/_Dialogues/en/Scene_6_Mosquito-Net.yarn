@@ -164,16 +164,14 @@ tags:
 {$puteli}:Ugkuga, I wholeheartedly accept you as my husband for all eternity. For that is what the Great Balete wishes. From this day on, we will share our lives together #line:0e9410e 
 (Ugkuga, still feigning drowsiness, grins to himself) #line:0e22ccf 
 
-<<HideImageHolder>>
+<<ChangeSpeakerImage {$ugkuga_image_name_2}>>
 {$ugkuga}:Then it seems I truly am the luckiest man alive. #line:0027f58 
-<<ShowImageHolder>>
 
 <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:Or perhaps… the most cursed. #line:0c5def7 
 
-<<HideImageHolder>>
+<<ChangeSpeakerImage {$ugkuga_image_name_3}>>
 {$ugkuga}:(chuckling)Same thing, isn’t it? #line:02c9ab6 
-<<ShowImageHolder>>
 
 //ending tricksters story
 <<NextScene SceneHandler Scene_7>>

@@ -1,5 +1,4 @@
 using NaughtyAttributes;
-using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UI;
 using Yarn.Unity;

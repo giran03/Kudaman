@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Tilemaps;
@@ -241,6 +240,7 @@ public class MazeMinigame : MonoBehaviour
         if (playerStartPosition != null)
             playerHandler.transform.position = playerStartPosition.position;
 
+        UpdateTileCount();
     }
 
     public void RestartPuzzle()

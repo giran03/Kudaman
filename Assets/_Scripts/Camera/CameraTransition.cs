@@ -2,6 +2,7 @@ using System.Collections;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class CameraTransition : MonoBehaviour
 {
@@ -56,7 +57,10 @@ public class CameraTransition : MonoBehaviour
         if (playerHandler.TransitionToPlayer2 && player2 != null)
             StartCoroutine(SmoothTransition(player2));
         else
+        {
             StartCoroutine(SmoothTransition(player));
+            player.gameObject.GetComponent<PlayerInput>().enabled = true;
+        }
     }
 
     [Button]

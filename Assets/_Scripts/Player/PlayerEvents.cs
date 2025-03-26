@@ -13,6 +13,8 @@ public class PlayerEvents : MonoBehaviour
     public UnityEvent OnPuteliBaleteInteractStart;
     public UnityEvent OnPuteliDialogue_2_end;
     public UnityEvent OnUgkugaTriggerEnding;
+    public UnityEvent OnPlayerCameraSequenceTriggerStart;
+    public UnityEvent OnPlayerCameraSequenceTriggerEnd;
 
     [YarnCommand("OnBaleteInteractStart")]
     public void InteractBalete() => OnBaleteInteractStart?.Invoke();
@@ -25,6 +27,12 @@ public class PlayerEvents : MonoBehaviour
 
     [YarnCommand("OnUgkugaTriggerEnding")]
     public void UgkugaTriggerEnding() => OnUgkugaTriggerEnding?.Invoke();
+
+    [YarnCommand("OnPlayerCameraSequenceTriggerStart")]
+    public void PlayerCameraSequenceTriggerStart() => OnPlayerCameraSequenceTriggerStart?.Invoke();
+
+    [YarnCommand("OnPlayerCameraSequenceTriggerEnd")]
+    public void PlayerCameraSequenceTriggerEnd() => OnPlayerCameraSequenceTriggerEnd?.Invoke();
 
     // ⚠️ DEBUG ⚠️
     public void TestLog() => Debug.Log("Test Log");

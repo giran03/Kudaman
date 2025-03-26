@@ -380,6 +380,12 @@ MonoBehaviour:
   OnUgkugaTriggerEnding:
     m_PersistentCalls:
       m_Calls: []
+  OnPlayerCameraSequenceTriggerStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerCameraSequenceTriggerEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5257148267155297556
 MonoBehaviour:
   m_ObjectHideFlags: 0

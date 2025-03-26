@@ -1,5 +1,4 @@
 using EasyTransition;
-using NUnit.Framework;
 using Tymski;
 using UnityEngine;
 using UnityEngine.SceneManagement;
