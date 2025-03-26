@@ -1,8 +1,10 @@
+using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Tilemaps;
 using Yarn;
 using Yarn.Unity;
 
@@ -14,7 +16,10 @@ public interface IInteractable
 public class PlayerHandler : MonoBehaviour
 {
     [Header("Configs")]
-
+    public bool transitionAfterDialogue = true;
+    public bool TransitionToPlayer2 { get; set; }
+    [Space]
+    [Header("Sprite Configs")]
     [DisableIf(EConditionOperator.Or, "isPuteli", "isPlayer")]
     public bool isUgkuga;
     [DisableIf(EConditionOperator.Or, "isUgkuga", "isPlayer")]
@@ -48,11 +53,17 @@ public class PlayerHandler : MonoBehaviour
     bool isFootstepsOnCd;
     GameObject _otherGameobject;
 
-    static PlayerEvents playerEvents;
+    public static PlayerEvents playerEvents;
     SpriteSwitch spriteSwitch;
     DialogueRunner dialogueRunner;
     DialogueAdvanceInput dialogueInput;
     NPC lastNPC;
+
+    // auto move
+    float timeElapsed = 0;
+
+    //minigames
+    MazeMinigame mazeMinigame;
 
     private void Awake()
     {
@@ -65,16 +76,18 @@ public class PlayerHandler : MonoBehaviour
         Application.targetFrameRate = 60;
 
         animator = GetComponent<Animator>();
+
+        mazeMinigame = FindFirstObjectByType<MazeMinigame>();
     }
 
     private void OnEnable()
     {
-        _playerInput.actions.Enable();
+        _playerInput?.actions.Enable();
     }
 
     private void OnDisable()
     {
-        _playerInput.actions.Disable();
+        _playerInput?.actions.Disable();
     }
 
     private void Start()
@@ -87,10 +100,9 @@ public class PlayerHandler : MonoBehaviour
         var circleCollider = GetComponent<CircleCollider2D>();
         circleCollider.radius = interactionRadius;
 
-        dialogueRunner.onNodeComplete.AddListener(delegate (string nodeName)
-        {
-            Debug.Log($"test {nodeName}");
-        });
+        // dialogueRunner.onNodeComplete.AddListener(delegate (string nodeName)
+        // {
+        // });
 
         if (isUgkuga)
             spriteSwitch.spriteTexture = ugkugaSprite.texture;
@@ -123,7 +135,6 @@ public class PlayerHandler : MonoBehaviour
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            Debug.Log($"Keyboard is pressed in this frame!");
             CheckForNearbyNPC();
         }
     }
@@ -142,6 +153,28 @@ public class PlayerHandler : MonoBehaviour
         {
             lastNPC = other.GetComponent<NPC>();
             other.GetComponent<NPC>().Enable_SpriteQuestionMark();
+        }
+
+        if (mazeMinigame != null)
+        {
+            Vector3Int[] directions = { Vector3Int.up, Vector3Int.down, Vector3Int.left, Vector3Int.right };
+            Vector3Int cellPosSign = mazeMinigame.tilemapPushable.WorldToCell(mazeMinigame.playerOrigin.transform.position);
+
+            foreach (Vector3Int direction in directions)
+            {
+                Vector3Int targetPos = cellPosSign + direction;
+                if (other.gameObject.TryGetComponent<Tilemap>(out var tileMap))
+                {
+                    tileMap.GetTile(targetPos);
+
+                    TileBase targetPushableTile = mazeMinigame.tilemapPushable.GetTile(targetPos);
+
+                    if (targetPushableTile == mazeMinigame.pushableTile)
+                    {
+                        mazeMinigame.pushText.SetActive(true);
+                    }
+                }
+            }
         }
 
         // if (other.CompareTag("Region"))
@@ -166,6 +199,11 @@ public class PlayerHandler : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         lastNPC?.Disable_SpriteQuestionMark();
+
+        if (mazeMinigame != null)
+            if (mazeMinigame.tilemapPushable != other.gameObject.GetComponent<Tilemap>())
+                if (mazeMinigame.pushText != null)
+                    mazeMinigame.pushText.SetActive(false);
     }
 
     // void Interact()
@@ -186,7 +224,8 @@ public class PlayerHandler : MonoBehaviour
     public void EnableMovement()
     {
         _canMove = true;
-        CameraTransition.instance.TransitionToPlayer();
+        if (transitionAfterDialogue)
+            CameraTransition.instance.TransitionToPlayer();
         lastNPC?.Disable_QuestionMarkBubble();
         // GameUIControls.instance.ToggleInteractKeyUIButton(true);
     }
@@ -203,7 +242,6 @@ public class PlayerHandler : MonoBehaviour
     // DIALOGUES
     public void CheckForNearbyNPC()
     {
-        Debug.Log($"Im checking for nearby NPC!");
         var allParticipants = new List<NPC>(FindObjectsByType<NPC>(FindObjectsSortMode.None));
         var target = allParticipants.Find(delegate (NPC npc)
         {
@@ -214,7 +252,6 @@ public class PlayerHandler : MonoBehaviour
         {
             // GameUIControls.instance.ToggleInteractKeyUIButton(false);
             // Kick off the dialogue at this node.
-            Debug.Log($"dialogueRunner ({dialogueRunner})");
             dialogueRunner.StartDialogue(target.talkToNode);
             // reenabling the input on the dialogue
             dialogueInput.enabled = true;
@@ -222,8 +259,6 @@ public class PlayerHandler : MonoBehaviour
             // Transition Camera to the target npc
             CameraTransition.instance.TransitionToTarget(target.transform);
         }
-        else
-            Debug.Log($"No nearby NPC found!");
     }
 
     [YarnCommand("startMazeMinigame")]
@@ -240,7 +275,34 @@ public class PlayerHandler : MonoBehaviour
         playerEvents.OnMazeMiniGameEnd?.Invoke();
     }
 
+    public void DisableTransitionToSelf() => transitionAfterDialogue = false;
+
+    public void EnableTransitionToSelf() => transitionAfterDialogue = true;
+
+    // auto move
+    [Button]
+    [YarnCommand("MoveLeft_Puteli")]
+    public void MoveLeft() => StartCoroutine(MoveUpWithDuration(2f));
+
+    public IEnumerator MoveUpWithDuration(float duration)
+    {
+        while (timeElapsed < duration)
+        {
+            _movementVector = Vector2.left;
+            _rb.AddForce(_movementVector * _speed);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        _movementVector = Vector2.zero;
+    }
+
     //⚠️ DEBUG ⚠️
     [Button]
     public void ToggleMazeMinigame_DEBUG() => IsMazeMinigameActive = !IsMazeMinigameActive;
+
+    [Button]
+    public void LogTransitionPlayer2() => Debug.Log($"TransitionToPlayer2: {TransitionToPlayer2}");
+
+    [Button]
+    public void LogTransitionAfterDialogue() => Debug.Log($"transitionAfterDialogue: {transitionAfterDialogue}");
 }

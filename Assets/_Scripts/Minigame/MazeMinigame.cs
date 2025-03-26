@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Tilemaps;
@@ -8,6 +9,7 @@ using Yarn.Unity;
 public class MazeMinigame : MonoBehaviour
 {
     [Header("References")]
+    public GameObject pushText;
     public TMP_Text remainingCounterText;
     public Tilemap tilemapCollision;
     public Tilemap tilemapPushable;
@@ -21,24 +23,29 @@ public class MazeMinigame : MonoBehaviour
 
     [Header("Events")]
     public UnityEvent onPuzzleCompleted; // Event triggered when the puzzle is completed
+    public UnityEvent OnMazeMiniGameEnd;
 
     //count
     public int pushableTileCount = 0;
 
     static bool isPuzzleCompleted = false;
-    GameObject playerOrigin;
+    public GameObject playerOrigin;
+    PlayerEvents playerEvents;
     PlayerHandler playerHandler; // Reference to the PlayerHandler script
-    private Dictionary<Vector3Int, TileBase> initialTilePositions = new(); // Stores the initial positions of pushable tiles
-    private Dictionary<Vector3Int, TileBase> checkpointTilePositions = new(); // Stores the positions of checkpoint tiles
+    Dictionary<Vector3Int, TileBase> initialTilePositions = new(); // Stores the initial positions of pushable tiles
+    Dictionary<Vector3Int, TileBase> checkpointTilePositions = new(); // Stores the positions of checkpoint tile
 
     private void Start()
     {
         playerHandler = FindFirstObjectByType<PlayerHandler>();
         playerOrigin = GameObject.Find("Player Origin");
+        playerEvents = FindFirstObjectByType<PlayerEvents>();
 
         // Save the initial positions of all pushable tiles
         SaveInitialTilePositions();
         UpdateTileCount();
+
+        pushText.SetActive(false);
     }
 
     void UpdateTileCount()
@@ -212,6 +219,7 @@ public class MazeMinigame : MonoBehaviour
             isPuzzleCompleted = true;
             CompletePuzzle();
 
+            playerEvents.OnMazeMiniGameEnd?.Invoke();
             Debug.Log("All pushable tiles are on top of checkpoint tiles. Puzzle completed!");
         }
     }

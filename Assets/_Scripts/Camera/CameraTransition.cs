@@ -1,5 +1,7 @@
 using System.Collections;
+using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CameraTransition : MonoBehaviour
 {
@@ -7,12 +9,14 @@ public class CameraTransition : MonoBehaviour
 
     [Header("References")]
     public Transform player; // Reference to the player GameObject
+    public Transform player2;
 
     [Header("Settings")]
     public float smoothSpeed = 0.125f; // Speed of the camera transition
     public Vector3 offset; // Offset of the camera from the target
 
     private Transform currentTarget; // Current target the camera is following
+    public UnityEvent OnPlayerChanged;
 
     private void Awake()
     {
@@ -48,8 +52,19 @@ public class CameraTransition : MonoBehaviour
     // Function to transition back to the player
     public void TransitionToPlayer()
     {
-        // StopCoroutine(SmoothTransition(currentTarget));
-        StartCoroutine(SmoothTransition(player));
+        var playerHandler = FindFirstObjectByType<PlayerHandler>();
+        if (playerHandler.TransitionToPlayer2 && player2 != null)
+            StartCoroutine(SmoothTransition(player2));
+        else
+            StartCoroutine(SmoothTransition(player));
+    }
+
+    [Button]
+    // Function to transition to player2
+    public void TransitionToPlayer2()
+    {
+        currentTarget = player2;
+        OnPlayerChanged?.Invoke();
     }
 
     // Coroutine to smoothly transition between targets

@@ -3,9 +3,11 @@ tags:
 ---
 // SAMPLE
 <<if visited("Scene_3_ClearingThePath") is false>>
+    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
     {$ugkuga}:(grumbling, annoyed) #line:0e6a109 
     {$ugkuga}:sweep the path for me Ukuga! [pause = 500/]I bet being a princess is so easy, telling other people to clean up the path for them [pause = 400/]while looking pretty and speaking to spirits... #line:042fedc 
 
+    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
     {$ugkuga}:(Then pauses, a smirk growing on his face) #line:0c1f7ff 
     {$ugkuga}:And I bet [pause = 800/]Puteli’s future husband will have it just as easy too... hmm... #line:08e511a 
 
@@ -19,9 +21,11 @@ title: Scene_3_ClearingThePath_cleared
 tags:
 ---
 <<if isPuzzleCompleted() is true>>
+    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
     {$ugkuga}:There. [pause = 800/]That path should give me plenty of time to hide #line:096d2b9 
     <<endMazeMinigame>>
 <<else>>
+    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
     {$ugkuga}:I should finish sweeping the path #line:0e7c71e //adlib
 <<endif>>
 ... #line:0dad7aa 
@@ -29,14 +33,17 @@ tags:
 
 // ⚠️ ???? ⚠️
 <<if $isBush is true>>
+<<ChangeSpeakerImage {$ugkuga_image_name_2}>>
 {$ugkuga}:Bit too small to fit me.. Better keep looking #line:02959a3 
 <<endif>>
 
 <<if $isPutilePath is true>>
+<<ChangeSpeakerImage {$ugkuga_image_name_2}>>
 {$ugkuga}:She should be coming soon. I need to find a place to hide #line:0bd5440 
 <<endif>>
 
 <<if $isPathToVillage is true>>
+<<ChangeSpeakerImage {$ugkuga_image_name_2}>>
 {$ugkuga}:I don't want to leave just yet... #line:05a54a9 
 <<endif>>
 ===
@@ -44,5 +51,7 @@ title:isBaleteTree
 tags:
 ---
 <<ChangeSpeakerImage {$ugkuga_image_name_0}>>
+<<OnBaleteInteractStart Player>>
 {$ugkuga}:These roots should hide me well! Now i’ll just wait... #line:0629a83
+<<OnBaleteInteractEnd Player>>
 ===

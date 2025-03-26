@@ -1,3 +1,4 @@
+using NaughtyAttributes;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,6 +35,17 @@ public class GameUIControls : MonoBehaviour
     {
         dialogueRunner.onDialogueStart.RemoveListener(DisableInteractKeyUIButton);
         dialogueRunner.onDialogueComplete.RemoveListener(EnableInteractKeyUIButton);
+    }
+
+    public void ChangePlayerHandler()
+    {
+        playerHandler = FindFirstObjectByType<PlayerHandler>();
+    }
+
+    [Button]
+    public void CheckPlayerHandler()
+    {
+        Debug.Log($"PlayerHandler: {playerHandler.gameObject.name}");
     }
 
     public void InteractKeyUIButton() => playerHandler.CheckForNearbyNPC();
