@@ -309,7 +309,7 @@ MonoBehaviour:
   leftAnimatorController: {fileID: 9100000, guid: 7fefa74fb6b9adb42965e9573f3223bf, type: 2}
   rightAnimatorController: {fileID: 9100000, guid: 2ff73b6dff7733b41b2e1dbaacf75ba9, type: 2}
   ugkuga_idleSpriteSheet: {fileID: 6289842542534860394, guid: 041a3ce2fabffad4db5b303b74bf9260, type: 3}
-  ugkuga_walkSpriteSheet: {fileID: 6289842542534860394, guid: 041a3ce2fabffad4db5b303b74bf9260, type: 3}
+  ugkuga_walkSpriteSheet: {fileID: -975314051, guid: cec5d7f66ae9b8c468c50e8ad871374d, type: 3}
   puteli_idleSpriteSheet: {fileID: -4195579314422226629, guid: 8ded76173adc1a747a34571800ed544a, type: 3}
   puteli_walkSpriteSheet: {fileID: -4195579314422226629, guid: 8ded76173adc1a747a34571800ed544a, type: 3}
   player_male_idleSpriteSheet: {fileID: -8847009744761790242, guid: a9ea38e6c2361844db6968a3bee60255, type: 3}
