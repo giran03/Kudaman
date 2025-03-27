@@ -59,7 +59,7 @@ public class DialogueConfigsHandler : MonoBehaviour
                     player_image_name = "journalist_3";
                 }
             }
-            if (playerHandler.GetSelectedGender() == "female")
+            else if (playerHandler.GetSelectedGender() == "female")
             {
                 if (playerHandler.DialogueSpriteToUse() == "female_1")
                 {
@@ -74,8 +74,11 @@ public class DialogueConfigsHandler : MonoBehaviour
                     player_image_name = "journalist_6";
                 }
             }
+
+            speakerImageDisplay.sprite = characterSprites.FirstOrDefault(sprite => sprite.name == speakerName);
         }
-        speakerImageDisplay.sprite = characterSprites.FirstOrDefault(sprite => sprite.name == speakerName);
+        else
+            speakerImageDisplay.sprite = characterSprites.FirstOrDefault(sprite => sprite.name == speakerName);
     }
 
     [YarnCommand("ShowImageHolder")]

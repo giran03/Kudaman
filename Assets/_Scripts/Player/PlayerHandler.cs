@@ -96,12 +96,12 @@ public class PlayerHandler : MonoBehaviour
         {
             var playerGenderFromPrefs = PlayerPrefs.GetString("playerGender");
             selectedGender = playerGenderFromPrefs;
-            if (playerGenderFromPrefs == "Male")
+            if (playerGenderFromPrefs == "male")
             {
                 isMale = true;
                 isFemale = false;
             }
-            else if (playerGenderFromPrefs == "Female")
+            else if (playerGenderFromPrefs == "female")
             {
                 isMale = false;
                 isFemale = true;
