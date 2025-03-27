@@ -181,6 +181,9 @@ public class MazeMinigame : MonoBehaviour
                         // Move the pushable tile to the collision tilemap
                         tilemapPushable.SetTile(targetPos, null);
                         tilemapPushable.SetTile(pushPos, pushableTile);
+
+                        //sfx
+                        SoundEffectsPlayer.Instance.PlaySFX("broomSweep");
                     }
                 }
             }
