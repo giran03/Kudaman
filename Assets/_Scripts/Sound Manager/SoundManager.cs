@@ -18,13 +18,9 @@ public class SoundManager : MonoBehaviour
     void Awake()
     {
         if (Instance != null && Instance != this)
-        {
             Destroy(this);
-        }
         else
-        {
             Instance = this;
-        }
 
         CreateAudioSources();
     }
@@ -69,6 +65,9 @@ public class SoundManager : MonoBehaviour
         {
             cachedSoundSource.source.pitch = pitch;
         }
+        else
+            cachedSoundSource.source.pitch = 1f;
+        Debug.Log($"Playing sound: {sound.Audio.name} at position: {position} with pitch: {pitch}");
 
         cachedSoundSource.source.Play();
     }

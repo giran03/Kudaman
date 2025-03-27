@@ -20,4 +20,10 @@ public class SoundEffectsPlayer : MonoBehaviour
     public void PlayUIClickedSound() => sfx[3].Play(transform.position);
     public void PlayCatSound() => sfx[4].Play(transform.position);
     public void PlayDialogueTriggerSound() => sfx[5].Play(transform.position);
+    public void PlaySFX(string sfxName)
+    {
+        Sound sfxToPlay = System.Array.Find(sfx, s => s.Audio.name == sfxName);
+        if (sfxToPlay != null)
+            sfxToPlay.Play(transform.position);
+    }
 }

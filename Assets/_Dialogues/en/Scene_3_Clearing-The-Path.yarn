@@ -53,5 +53,9 @@ tags:
 <<ChangeSpeakerImage {$ugkuga_image_name_0}>>
 <<OnBaleteInteractStart Player>>
 {$ugkuga}:These roots should hide me well! Now i’ll just wait... #line:0629a83
+<<UgkugaEyesOpen UgkugaEyes>>
+<<wait 1.5>>
+<<UgkugaEyesClose UgkugaEyes>>
+<<wait 1.5>>
 <<OnBaleteInteractEnd Player>>
 ===
