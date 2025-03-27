@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b23c74de76c77428f4f9bb337136ce, type: 3}
+  m_Name: OnMazeComplete
+  m_EditorClassIdentifier: 
+  voiceOver: {fileID: 0}
+  _dialogue:
+  - lines:
+    - speakerName: Ugkuga
+      dialogueText: That should do it. Now I need to find a place to hide and wait
+        until evening for the procession to come.
+      speakerSprite: {fileID: -5168360847614392755, guid: efbec835bee9f784b831a008c5ea758d, type: 3}
