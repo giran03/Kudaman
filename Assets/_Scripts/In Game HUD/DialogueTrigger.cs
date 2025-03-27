@@ -53,7 +53,10 @@ public class DialogueTrigger : MonoBehaviour
     private IEnumerator DoTriggerDialogue()
     {
         yield return null;
-        DialogueManager.Instance.StartDialogue(dialogueData);
+        if (!DialogueManager.Instance.IsTyping)
+        {
+            DialogueManager.Instance.StartDialogue(dialogueData);
+        }
     }
 
     private void OnDialogueStart()
@@ -74,7 +77,11 @@ public class DialogueTrigger : MonoBehaviour
         if (cinemachineVirtualCamera)
             cinemachineVirtualCamera.enabled = false;
 
-        if (!willResetTrigger)
+        if (willResetTrigger)
+        {
+            isTriggered = true; // Keep it triggered permanently for one-time dialogues
+        }
+        else
         {
             StartCoroutine(SetUntriggeredWhenAnimationEnds());
         }
