@@ -6,25 +6,25 @@ position: -89,-99
 <<declare $npc_name_1 = "npc_name_1" as string>>
 <<declare $npc_image_name_1 = "npc_image_1" as string>>
 
-<<ChangeSpeakerImage {$player_image_name}>>
+<<ChangeSpeakerImage DialogueConfigs {$player_image_name}>>
 {$player_name}:Wow!  #line:09b56d5
 {$player_name}:My first ever Yarn script in Unity! #line:0c192aa 
 {$player_name}:By the way... I'm {$player_name}! #line:0aac704 
 
-<<ChangeSpeakerImage {$npc_image_name_1}>>
+<<ChangeSpeakerImage DialogueConfigs {$npc_image_name_1}>>
 {$npc_name_1}:Nice to meet you {$player_name}! #line:01cb980 
 
 -> Gosh! #line:02644d2 
 -> Incredible! #line:0a9b42e 
 -> I'm amazed! #line:01c78af 
 
-<<ChangeSpeakerImage {$player_image_name}>>
+<<ChangeSpeakerImage DialogueConfigs {$player_image_name}>>
 {$player_name}:Anyway, time to get writing! #line:033645d 
 
-<<ChangeSpeakerImage {$npc_image_name_1}>>
+<<ChangeSpeakerImage DialogueConfigs {$npc_image_name_1}>>
 {$npc_name_1}:Good luck! #line:0732daa 
 
-<<ChangeSpeakerImage {$player_image_name}>>
+<<ChangeSpeakerImage DialogueConfigs {$player_image_name}>>
 {$player_name}:Thanks! #line:08f0f79 
 
 ===

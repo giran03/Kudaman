@@ -32,6 +32,19 @@ public class PlayerHandler : MonoBehaviour
     [ShowIf("isPlayer")]
     [DisableIf("isMale")]
     public bool isFemale;
+
+    [Header("Gender Sprite Variants")]
+    [ShowIf("isMale")]
+    public Sprite[] male_2_SpriteVariants;
+    [ShowIf("isMale")]
+    public Sprite[] male_3_SpriteVariants;
+    [Space]
+    [ShowIf("isFemale")]
+    public Sprite[] female_2_SpriteVariants;
+    [ShowIf("isFemale")]
+    public Sprite[] female_3_SpriteVariants;
+
+    [Space]
     [SerializeField] Sprite ugkugaSprite;
     [SerializeField] Sprite puteliSprite;
     [SerializeField] Sprite playerSprite;
@@ -57,6 +70,8 @@ public class PlayerHandler : MonoBehaviour
     // auto move
     float timeElapsed = 0;
 
+    string selectedGender;
+
     //minigames
     MazeMinigame mazeMinigame;
 
@@ -80,6 +95,7 @@ public class PlayerHandler : MonoBehaviour
         if (isPlayer)
         {
             var playerGenderFromPrefs = PlayerPrefs.GetString("playerGender");
+            selectedGender = playerGenderFromPrefs;
             if (playerGenderFromPrefs == "Male")
             {
                 isMale = true;
@@ -273,6 +289,38 @@ public class PlayerHandler : MonoBehaviour
         }
         _movementVector = Vector2.zero;
     }
+
+    [Button]
+    public void CheckDialogueSpriteToUse() => Debug.Log($"DialogueSpriteToUse: {DialogueSpriteToUse()}");
+    public string DialogueSpriteToUse()
+    {
+        var selectedGenderVariant = PlayerPrefs.GetInt("playerGenderVariant");
+        var selectedGender = PlayerPrefs.GetString("playerGender");
+        if (selectedGenderVariant == 0)
+        {
+            if (selectedGender == "male")
+                return "male_1";
+            else
+                return "female_1";
+        }
+        else if (selectedGenderVariant == 1)
+        {
+            if (selectedGender == "male")
+                return "male_2";
+            else
+                return "female_2";
+        }
+        else if (selectedGenderVariant == 2)
+        {
+            if (selectedGender == "male")
+                return "male_3";
+            else
+                return "female_3";
+        }
+        return "???";
+    }
+
+    public string GetSelectedGender() => selectedGender = PlayerPrefs.GetString("playerGender");
 
     //⚠️ DEBUG ⚠️
     [Button]

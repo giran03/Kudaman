@@ -2,7 +2,7 @@
 tags:
 ---
 <<ShowImageHolder>>
-<<ChangeSpeakerImage {$player_image_name}>>
+<<ChangeSpeakerImage DialogueConfigs {$player_image_name}>>
 {$player_name}:(muttering to themselves) “Ugh, why did i even pick this topic? ‘The Stories of Indigenous Culture’ #line:07c7550 
 {$player_name}:sounds fascinating, sure, but where do I even begin? #line:09aff6f 
 {$player_name}:The internet barely scratches the surface, and the books in the library just repeat the same old legends... #line:02780ba 
@@ -12,7 +12,7 @@ tags:
 (One landing at the feet of an old man sitting on a bench beneath a towering Balete tree.) #line:0530623 
 
 <<ShowImageHolder>>
-<<ChangeSpeakerImage {$player_image_name}>>
+<<ChangeSpeakerImage DialogueConfigs {$player_image_name}>>
 {$player_name}:(frantically chasing after pages) No, no, no! Come back here! #line:06dea83 
 
 <<TriggerAnimation PaperHolder FlyPaper>>

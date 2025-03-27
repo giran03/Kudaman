@@ -35,6 +35,7 @@ public class PlayerAnimationController : MonoBehaviour
     private void Start()
     {
         var playerHandler = GetComponent<PlayerHandler>();
+        var playerSelectedVariant = PlayerPrefs.GetInt("playerGenderVariant");
 
         if (playerHandler.isUgkuga)
         {
@@ -50,14 +51,43 @@ public class PlayerAnimationController : MonoBehaviour
         {
             if (playerHandler.isMale)
             {
-                active_idleSpriteSheet = player_male_idleSpriteSheet;
-                active_walkSpriteSheet = player_male_walkSpriteSheet;
+                //change sprite based on sprite variant picked
+                if (playerSelectedVariant == 1)
+                {
+                    active_idleSpriteSheet = playerHandler.male_2_SpriteVariants[0];
+                    active_walkSpriteSheet = playerHandler.male_2_SpriteVariants[1];
+                }
+                else if (playerSelectedVariant == 2)
+                {
+                    active_idleSpriteSheet = playerHandler.male_3_SpriteVariants[0];
+                    active_walkSpriteSheet = playerHandler.male_3_SpriteVariants[1];
+                }
+                else
+                {
+                    active_idleSpriteSheet = player_male_idleSpriteSheet;
+                    active_walkSpriteSheet = player_male_walkSpriteSheet;
+                }
             }
             else if (playerHandler.isFemale)
             {
-                active_idleSpriteSheet = player_female_idleSpriteSheet;
-                active_walkSpriteSheet = player_female_walkSpriteSheet;
+                //change sprite based on sprite variant picked
+                if (playerSelectedVariant == 1)
+                {
+                    active_idleSpriteSheet = playerHandler.female_2_SpriteVariants[0];
+                    active_walkSpriteSheet = playerHandler.female_2_SpriteVariants[1];
+                }
+                else if (playerSelectedVariant == 2)
+                {
+                    active_idleSpriteSheet = playerHandler.female_3_SpriteVariants[0];
+                    active_walkSpriteSheet = playerHandler.female_3_SpriteVariants[1];
+                }
+                else
+                {
+                    active_idleSpriteSheet = player_female_idleSpriteSheet;
+                    active_walkSpriteSheet = player_female_walkSpriteSheet;
+                }
             }
+            Debug.Log($"selected variant is {playerSelectedVariant}");
         }
     }
 

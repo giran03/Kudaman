@@ -1,11 +1,11 @@
 ﻿title: Scene_4_The-Baletes-Prophecy
 tags:
 ---
-<<ChangeSpeakerImage {$MaidLanawen_dialogue_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$MaidLanawen_dialogue_0}>>
 {$maid_lanawen}:Who sweeps in such a strange pattern? #line:0dbc585 
-<<ChangeSpeakerImage {$MaidSulaya_dialogue_1}>>
+<<ChangeSpeakerImage DialogueConfigs {$MaidSulaya_dialogue_1}>>
 {$maid_sulaya}:(annoyed) Only Ugkuga. #line:0dd1b67 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:(calmly) If he did his job, then that is good enough. #line:0540222 
 <<Disable_Puteli_1 SCENE_4_Puteli_1>>
 
@@ -32,14 +32,14 @@ title:puteliInteractionWithBalete
 (Puteli kneels and places a memoon and namat for a betel chew before the tree) #line:0f8af28 
 <<ShowImageHolder>>
 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:O Great Balete, tell me… do you know of the person I am destined to marry? #line:0223c69 
 
 <<HideImageHolder>>
 (Ugkuga, hidden among the branches, deepens his voice and answers) #line:0d496f7 
 <<ShowImageHolder>>
 
-<<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
 <<UgkugaEyesOpen UgkugaEyes>>
 {$ugkuga}(disguised):The man whom you’re destined to spend an eternity with is... [pause = 800/]Ugkuga! #line:024f2ba 
 <<UgkugaEyesClose UgkugaEyes>>
@@ -48,13 +48,13 @@ title:puteliInteractionWithBalete
 (The maids gasp, horrified.) #line:0ac1e2b 
 <<ShowImageHolder>>
 
-<<ChangeSpeakerImage {$MaidSulaya_dialogue_1}>>
+<<ChangeSpeakerImage DialogueConfigs {$MaidSulaya_dialogue_1}>>
 {$maid_sulaya}:That fool? #line:0531583 
-<<ChangeSpeakerImage {$MaidLanawen_dialogue_1}>>
+<<ChangeSpeakerImage DialogueConfigs {$MaidLanawen_dialogue_1}>>
 {$maid_lanawen}:The princess deserves much better! There must be something wrong! #line:0b0e1bb 
-<<ChangeSpeakerImage {$maidDangaya_dialogue_1}>>
+<<ChangeSpeakerImage DialogueConfigs {$maidDangaya_dialogue_1}>>
 {$maid_dangaya}:I cannot believe this! Surely you do not believe this, my lady? #line:03f0217 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_2}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_2}>>
 {$puteli}:(pauses, deep in thought) If that’s what the great balete sees... [pause = 600/]then it must be the path I am destined to walk on. #line:0c86105 
 
 <<jump baleteChoices>>
@@ -62,20 +62,20 @@ title:puteliInteractionWithBalete
 
 title:baleteChoices
 ---
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 ->Why Ugkuga? #line:0b60d54 
     <<UgkugaEyesOpen UgkugaEyes>>
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}(disguised):His heart is strong, and his mind is clever. #line:08bb40a 
     <<UgkugaEyesClose UgkugaEyes>>
 ->Is there truly no one else? #line:0861ee9 
     <<UgkugaEyesOpen UgkugaEyes>>
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}(disguised):Fate cannot be changed, princess... #line:045dbbb 
     <<UgkugaEyesClose UgkugaEyes>>
 ->What if I refuse? #line:0c90056 
     <<UgkugaEyesOpen UgkugaEyes>>
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}(disguised):The spirits will not be pleased... #line:06774d4 
     <<UgkugaEyesClose UgkugaEyes>>
 ===

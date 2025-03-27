@@ -5,7 +5,7 @@ tags:
 // 🫧SCENE 1🫧
 // PLAYER
 <<declare $player_name = "Journalist" as string>>
-<<declare $player_image_name = "journalist" as string>>
+<<declare $player_image_name = "isPlayer" as string>>
 
 // Old Man | Professor Sulayman
 <<declare $oldMan_name = "Old Man" as string>>

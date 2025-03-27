@@ -1,9 +1,9 @@
 ﻿title: Scene_6_Mosquito_Net
 tags:
 ---
-<<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
 {$ugkuga}:(Surprised): My lady! I didn’t see you there. #line:0c4895a 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:I see my maids have given you quite the chase.. Here. For the mosquitoes. As an apology for the trouble that has been caused to you... #line:016fb39 
 
 //TODO:REMOVE!!!!!
@@ -15,11 +15,11 @@ tags:
 <<MoveLeft_Puteli Puteli>>
 <<ShowImageHolder>>
 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:Do you mind if I sit beside you? #line:04101df 
-<<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
 {$ugkuga}:Of course not, your highness #line:01aac3c 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:Thank you...  #line:067649c 
 
 <<HideImageHolder>>
@@ -28,131 +28,131 @@ tags:
 ...[pause = 5000/] #line:05e4ec9 
 <<ShowImageHolder>>
 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_2}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_2}>>
 {$puteli}:The spirits have spoken to me earlier... #line:081eb26 
-<<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
 {$ugkuga}:(Acting surprised)And what have they told you, your highness? #line:02f0ba7 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:(calmly)They have chosen you to be my husband #line:0d8cc43 
 
 //choices
-<<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
 ->Have they?  #line:0ae8b66 //Acting Surprised
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
     {$puteli}:(calmly, somber expression): "Yes…and they have spoken with such certainty. No hesitation whatsoever #line:08612d9 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:The spirits must have quite the peculiar sense of humor then... #line:0d8e3b3 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_1}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_1}>>
     {$puteli}:You jest, but they have never been wrong before... #line:028ad05 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:And if they are wrong this time? #line:0161dc5 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_2}>>
     {$puteli}:Then the path I follow would still be my choice, wouldn’t it? #line:0120a12 
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}:And you chose to follow it regardless? #line:0d336ac 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
     {$puteli}:(softly)A princess does not stray from the path given to her #line:02dfa9d 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:Even if that path leads to someone like me? #line:0f0ca65 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
     {$puteli}:Even then... #line:062bdf6 
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}:Well, your highness, I must say… I admire your devotion #line:082f5e7 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_2}>>
     {$puteli}:It is not devotion. It is duty #line:0c5f014 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:(Grinning)Then allow me to be the best burden you will ever bear #line:0203fed 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
     {$puteli}:(sighing)You already are... #line:00b1eae 
 ->Is that so?  #line:061a834 //Feign Indifference
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_1}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_1}>>
     {$puteli}:(calm surprise)you don't seem surprised? #line:094fbee 
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}:Should I be? #line:060594d 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_2}>>
     {$puteli}:Most men would be #line:055df6b 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:Perhaps I am not like most men #line:0a09df0 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_1}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_1}>>
     {$puteli}:(slight suspicion)Or perhaps you expected this all along? #line:00725bc 
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}:(smirking)I do have a habit of finding myself in peculiar situations #line:0ef4210 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
     {$puteli}:(slight smile)That you do... #line:0f6515b 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:And yet, you still sit here with me? #line:0d93359 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
     {$puteli}:I do #line:073816c 
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}:Then perhaps the spirits knew you better than you thought #line:0e1b3ef 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_2}>>
     {$puteli}:(pauses)Perhaps... #line:0d6769a 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:Do you regret it? #line:0939517 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
     {$puteli}:(Softly)What good would regret do for me? #line:00a467e 
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}:None. But rather you do not resent me either. #line:044b98e 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_1}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_1}>>
     {$puteli}:Resentment is a choice. And I have made mine #line:00e9d95 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:Then i suppose i should thank the spirits #line:0603e9d 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_1}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_1}>>
     {$puteli}:(giving him a look)Do not grow arrogant, Ugkuga #line:0bd16f0 
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}:(grinning)Too late #line:099555e 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
     {$puteli}:(Sighing)May the spirits give me patience... #line:0dd4111 
 -> And do you believe them?  #line:0dd28a4 //Challenge the prophecy
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
     {$puteli}:(calmly, somber expression)Does it matter? #line:0000c10 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:I think it does #line:06cf807 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_1}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_1}>>
     {$puteli}:The spirits do not lie. #line:0a05350 
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}:That’s not what I asked #line:051570f 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_2}>>
     {$puteli}:Then what are you asking? #line:0a7aca6 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:Do you want it to be true? #line:0883e19 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_1}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_1}>>
     {$puteli}:... #line:0be88d7 
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}:A prophecy means nothing if you cannot accept it #line:0f5ffa6 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_2}>>
     {$puteli}:Acceptance is not the same as desire #line:01810d3 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:Then tell me, your highness - What do you desire? #line:0419372 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_3}>>
     {$puteli}:I... (pauses and looks away) It does not matter #line:0510b24 
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}:But it should #line:02b85e2 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
     {$puteli}:(Softly)And if it does? #line:035e330 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:Then perhaps you should consider what you truly want, instead of what you must accept #line:0b90407 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_2}>>
     {$puteli}:And what if I cannot tell the difference? #line:0d268ad 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:Then let me make it easier for you #line:0e41ea0 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_1}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_1}>>
     {$puteli}:(Finally meeting his gaze)How? #line:0fac3b3 
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}:(grinning)By making you forget there was ever a difference. #line:0e14d36 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_2}>>
     {$puteli}:(Exhales)You are insufferable #line:027e5ea 
-    <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
     {$ugkuga}:And yet, you will be stuck with me for eternity #line:0e98a33 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_1}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_1}>>
     {$puteli}:So it seems... #line:0b83a0b 
-    <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
     {$ugkuga}:Then let us make the best of it, shall we? #line:0acdf7f 
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
     {$puteli}:... That we shall #line:0656247 
 
 (She breaks the silence) #line:046f916 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:Come, lay on me while you rest. #line:03fa72b 
 
 <<HideImageHolder>>
@@ -160,17 +160,17 @@ tags:
 (He rests his head on her lap, closing his eyes as she absentmindedly brushes his hair with her fingers) #line:0c8f02e 
 <<ShowImageHolder>>
 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:Ugkuga, I wholeheartedly accept you as my husband for all eternity. For that is what the Great Balete wishes. From this day on, we will share our lives together #line:0e9410e 
 (Ugkuga, still feigning drowsiness, grins to himself) #line:0e22ccf 
 
-<<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
 {$ugkuga}:Then it seems I truly am the luckiest man alive. #line:0027f58 
 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:Or perhaps… the most cursed. #line:0c5def7 
 
-<<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
 {$ugkuga}:(chuckling)Same thing, isn’t it? #line:02c9ab6 
 
 //ending tricksters story
@@ -180,7 +180,7 @@ tags:
 title:Ugkuga_1
 ---
 <<ShowImageHolder>>
-<<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
 {$ugkuga}:(Exhasted): Phew, those maids were certainly persistent... Really knocked the wind outta me... #line:07acec9 
 
 <<jump Ugkuga_windmill>>
@@ -189,7 +189,7 @@ title:Ugkuga_1
 title:Ugkuga_windmill
 ---
 <<ShowImageHolder>>
-<<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
 {$ugkuga}:(I should find a spot to rest...) #line:0e54843 
 {$ugkuga}:(Maybe behind the barn with windmill...) #line:00ed11d 
 {$ugkuga}:(Yeah, that's a good spot) #line:0146b6d 
@@ -197,7 +197,7 @@ title:Ugkuga_windmill
 
 title:Ugkuga_2
 ---
-<<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
 
 {$ugkuga}:(Ahh...) #line:058a198 
 {$ugkuga}:(Time to rest...) #line:0b426b9 
@@ -207,7 +207,7 @@ title:Ugkuga_2
 title:Ugkuga_3
 ---
 <<OnUgkugaTriggerEnding Player>>
-// <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+// <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_2}>>
 <<HideImageHolder>>
 (Ugkuga felt his eyes grow heavy but he could not sleep from the mosquitoes flying around him) #line:0266ebb 
 (He waves his hands and tries to shoo away the flying pests when he sees a figure emerge from the shadow of the trees) #line:0bb4120 

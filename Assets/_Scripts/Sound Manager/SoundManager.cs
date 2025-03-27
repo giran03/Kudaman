@@ -67,7 +67,7 @@ public class SoundManager : MonoBehaviour
         }
         else
             cachedSoundSource.source.pitch = 1f;
-        Debug.Log($"Playing sound: {sound.Audio.name} at position: {position} with pitch: {pitch}");
+        // Debug.Log($"Playing sound: {sound.Audio.name} at position: {position} with pitch: {pitch}");
 
         cachedSoundSource.source.Play();
     }

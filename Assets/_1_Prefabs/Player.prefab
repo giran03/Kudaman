@@ -281,8 +281,20 @@ MonoBehaviour:
   isUgkuga: 0
   isPuteli: 0
   isPlayer: 1
-  isMale: 0
-  isFemale: 1
+  isMale: 1
+  isFemale: 0
+  male_2_SpriteVariants:
+  - {fileID: -7778877382213902794, guid: 69bbbe0bbb1e8f54baff84a73b092039, type: 3}
+  - {fileID: 1124992722415247166, guid: 8a6f095f0a640e5449466ac4f19126ba, type: 3}
+  male_3_SpriteVariants:
+  - {fileID: -2537296670556666585, guid: 098313039081ddd489829772e9fc97d8, type: 3}
+  - {fileID: -3976147303368375044, guid: 664f95d1656317544b71dd6a13599e7e, type: 3}
+  female_2_SpriteVariants:
+  - {fileID: -3803589479603507813, guid: c8a2f34f9bd7ecf4dba4f31bc904c0d7, type: 3}
+  - {fileID: 5750387520070227365, guid: 32f97b7230deb5a4c8324a5b44bc0ef0, type: 3}
+  female_3_SpriteVariants:
+  - {fileID: -8038854231808107006, guid: 11f804f8b25b5e84aa2298ab2c91bb87, type: 3}
+  - {fileID: -5017560931929298215, guid: 0cea21c7b820a3142a66eabe45b35117, type: 3}
   ugkugaSprite: {fileID: 6289842542534860394, guid: 041a3ce2fabffad4db5b303b74bf9260, type: 3}
   puteliSprite: {fileID: -4195579314422226629, guid: 8ded76173adc1a747a34571800ed544a, type: 3}
   playerSprite: {fileID: -8847009744761790242, guid: a9ea38e6c2361844db6968a3bee60255, type: 3}

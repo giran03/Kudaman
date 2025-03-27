@@ -1,14 +1,14 @@
 ﻿title: Scene_5_The-Revelation
 tags:
 ---
-<<ChangeSpeakerImage {$ugkuga_image_name_3}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_3}>>
 {$ugkuga}:Greetings! I have come to share my everlasting love and endearment for Puteli, I have prepared a song for my love. #line:0b9b6b8 
 <<ManualCameraSequence CameraSequenceHandler 1 0>>
-<<ChangeSpeakerImage {$MaidLanawen_dialogue_1}>>
+<<ChangeSpeakerImage DialogueConfigs {$MaidLanawen_dialogue_1}>>
 {$maid_lanawen}:you are the most incompetent creature I’ve ever met #line:05b74c6
-<<ChangeSpeakerImage {$MaidSulaya_dialogue_1}>>
+<<ChangeSpeakerImage DialogueConfigs {$MaidSulaya_dialogue_1}>>
 {$maid_sulaya}:to think the great balete chose you to be our lady’s husband #line:0ec8374 
-<<ChangeSpeakerImage {$maidDangaya_dialogue_1}>>
+<<ChangeSpeakerImage DialogueConfigs {$maidDangaya_dialogue_1}>>
 {$maid_dangaya}:COMPLETELY OUTRAGEOUS #line:0e6ca0b 
 
 <<HideImageHolder>>

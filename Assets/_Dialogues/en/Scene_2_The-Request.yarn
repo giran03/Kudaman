@@ -4,68 +4,68 @@ tags:
 //TODO: Add portatit images for characters
 <<if visited("Ugkuga_and_the_Pretty_Princess") is false>>
 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:Ugkuga, [pause = 800/]I have an important task for you. I need the path to the Balete Tree cleaned [pause = 800/] so I may speak with the spirits there #line:0ac6b91 
 
-<<ChangeSpeakerImage {$ugkuga_image_name_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_0}>>
 {$ugkuga}:(grinning) #line:0ee5a72 
 {$ugkuga}:As you wish, my lady. [pause = 800/]But why must you ask the tree? [pause = 800/]Don’t the stars already speak to you? #line:0c0e715 
 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:(grinning) #line:0bed91a 
 {$puteli}:I wish to ask who my future husband will be. [pause = 800/]And surely, the great Balete knows. #line:01b41e7 
 
-<<ChangeSpeakerImage {$ugkuga_image_name_1}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_1}>>
 {$ugkuga}:(raising an eyebrow) #line:05a0730 
 {$ugkuga}:And what if it tells you something you wouldn’t want to hear? #line:06a9f1d 
 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:Then I shall accept it as fate. [pause = 800/]A princess must be prepared for all things #line:0175ad9 
 
-<<ChangeSpeakerImage {$ugkuga_image_name_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_0}>>
 {$ugkuga}:(smirking) #line:06033e5 
 {$ugkuga}:And what if fate happens to have a strange sense of humor? #line:056ca36 
 
-<<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+<<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
 {$puteli}:Then I shall laugh along with it. #line:0ea5c84
 
 ->Why must you have to know now? #line:09fcf04
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
     {$puteli}:A princess must prepare for her future. [pause = 800/]If the spirits know, why should I not ask? #line:0a057c2 
-    <<ChangeSpeakerImage {$ugkuga_image_name_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_0}>>
     {$ugkuga}:(smirks) #line:0539e2d 
     {$ugkuga}:Or perhaps you simply just wish to hear good news? #line:0c69c3e
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_0}>>
     {$puteli}:(playfully) #line:02aa9f5 
     {$puteli}:Perhaps. But one must never ignore density. #line:08e6e7b 
 ->And why should I be the one who must clean the path? #line:0868159
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_1}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_1}>>
     {$puteli}:Would you have me do it myself? [pause = 800/]I doubt you have anything more important to do. #line:0a54c53 
-    <<ChangeSpeakerImage {$ugkuga_image_name_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_0}>>
     {$ugkuga}:(mock gasp) #line:0221312 
     {$ugkuga}:But my lady, [pause = 800/]do you not see how well i perform my daily tasks? #line:0d7d499
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_1}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_1}>>
     {$puteli}:(unamused) #line:002735a 
     {$puteli}:You mean your daily task of sleeping under the shade..? #line:0423c47 
-    <<ChangeSpeakerImage {$ugkuga_image_name_0}>>
+    <<ChangeSpeakerImage DialogueConfigs {$ugkuga_image_name_0}>>
     {$ugkuga}:(smirking) #line:06dd191 
     {$ugkuga}:You must admit, [pause = 800/]I’m pretty good at it, don't you think? #line:00df75e
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_2}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_2}>>
     {$puteli}:(unamused) #line:0dc3fcf 
     {$puteli}:... #line:091a62a 
 
-<<ChangeSpeakerImage {$MaidLanawen_dialogue_1}>>
+<<ChangeSpeakerImage DialogueConfigs {$MaidLanawen_dialogue_1}>>
 {$maid_lanawen}:(whispering) #line:0b491c9 
 {$maid_lanawen}:Why must the princess trust this man? [pause = 800/]Was there truly no other person to take on this task? #line:08ba6ce 
 
-<<ChangeSpeakerImage {$MaidSulaya_dialogue_1}>>
+<<ChangeSpeakerImage DialogueConfigs {$MaidSulaya_dialogue_1}>>
 {$maid_sulaya}:(annoyed) #line:0da14fb 
 {$maid_sulaya}:I think it's good that our lady puts that man to work. All he does is lounge around and eat all the mangoes from the royal garden! Surely some discipline would do him good.#line:010ee7b
 
 <<EnableSceneChangeTrigger SceneChangeTrigger>>
 
 <<else>>
-    <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_3}>>
+    <<ChangeSpeakerImage DialogueConfigs {$PrincessPuteli_Dialogue_Sprites_3}>>
     {$puteli}:You should get going now... #line:02d0808 
 <<endif>>
 ===
