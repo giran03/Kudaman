@@ -18,7 +18,7 @@ public class DialogueConfigsHandler : MonoBehaviour
     [SerializeField] Sprite[] _characterSprites;
     static Sprite[] characterSprites;
 
-    void Start()
+    void Awake()
     {
         speakerImageDisplay = _speakerImageDisplay;
         characterSprites = _characterSprites;

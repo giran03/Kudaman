@@ -24,6 +24,6 @@ MonoBehaviour:
   flipX: 0
   flipY: 0
   transitionTime: 0.7
-  destroyTime: 3
+  destroyTime: 2
   transitionIn: {fileID: 8212135093846547593, guid: 969dd4df10bff1542827006be3cb2281, type: 3}
   transitionOut: {fileID: 6797660132664756540, guid: ef4669bd174fed948b0578bce2883331, type: 3}
