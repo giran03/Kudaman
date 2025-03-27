@@ -30,12 +30,12 @@ public class AutoCameraSequenceTrigger : MonoBehaviour
         if (nodeToStart != null || nodeToStart != "")
             onEndMethods.Add(() => dialogueRunner.StartDialogue(nodeToStart));
 
-        CameraSequenceHandler.instance.onCameraSequenceEnd.AddListener(ExecuteFunctions);
+        CameraSequenceHandler.Instance.onCameraSequenceEnd.AddListener(ExecuteFunctions);
     }
 
     void OnDisable()
     {
-        CameraSequenceHandler.instance.onCameraSequenceEnd.RemoveListener(ExecuteFunctions);
+        CameraSequenceHandler.Instance.onCameraSequenceEnd.RemoveListener(ExecuteFunctions);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -50,7 +50,7 @@ public class AutoCameraSequenceTrigger : MonoBehaviour
             if (nodeToStart == null || nodeToStart == "")
                 onEndMethods.Add(collision.gameObject.GetComponent<PlayerHandler>().EnableMovement);
 
-            StartCoroutine(CameraSequenceHandler.instance.AutoCameraSequence(sequenceIndexToTrigger));
+            StartCoroutine(CameraSequenceHandler.Instance.AutoCameraSequence(sequenceIndexToTrigger));
             boxCollider2D.enabled = false;
         }
     }

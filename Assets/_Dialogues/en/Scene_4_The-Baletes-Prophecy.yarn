@@ -21,7 +21,8 @@ title:puteliInteractionWithBalete
 <<OnPuteliBaleteInteractStart Player_1>>
 
 //TODO:REMOVE
-// <<stop>>
+...
+<<stop>>
 
 <<if visited("puteliInteractionWithBalete") is true>>
 <<jump baleteChoices>>

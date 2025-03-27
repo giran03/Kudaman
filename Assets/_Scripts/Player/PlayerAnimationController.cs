@@ -106,25 +106,27 @@ public class PlayerAnimationController : MonoBehaviour
     {
         Vector2 movementVector = playerHandler._movementVector;
 
-        if (movementVector.y > 0)
+        Debug.Log($"movementVector: {movementVector}");
+
+        if (movementVector.y > 0.5f)
         {
             // Moving up
             animator.runtimeAnimatorController = upAnimatorController;
             spriteSwitch.spriteTexture = active_walkSpriteSheet.texture;
         }
-        else if (movementVector.y < 0)
+        else if (movementVector.y < -0.5f)
         {
             // Moving down
             animator.runtimeAnimatorController = downAnimatorController;
             spriteSwitch.spriteTexture = active_walkSpriteSheet.texture;
         }
-        else if (movementVector.x < 0)
+        else if (movementVector.x < -0.5f)
         {
             // Moving left
             animator.runtimeAnimatorController = leftAnimatorController;
             spriteSwitch.spriteTexture = active_walkSpriteSheet.texture;
         }
-        else if (movementVector.x > 0)
+        else if (movementVector.x > 0.5f)
         {
             // Moving right
             animator.runtimeAnimatorController = rightAnimatorController;

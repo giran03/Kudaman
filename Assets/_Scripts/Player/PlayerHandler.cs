@@ -82,8 +82,6 @@ public class PlayerHandler : MonoBehaviour
         _playerInput = GetComponent<PlayerInput>();
         playerEvents = GetComponent<PlayerEvents>();
         spriteSwitch = GetComponent<SpriteSwitch>();
-        playerAudio = GetComponent<PlayerAudio>();
-        Debug.Log($"playerAudio: {playerAudio}");
 
         Application.targetFrameRate = 60;
 
@@ -128,6 +126,7 @@ public class PlayerHandler : MonoBehaviour
     private void Start()
     {
         // _playerInput.actions["Tap Interaction"].started += ctx => Interact();
+        playerAudio = GetComponent<PlayerAudio>();
 
         dialogueInput = FindFirstObjectByType<DialogueAdvanceInput>();
         dialogueInput.enabled = false;
@@ -215,7 +214,7 @@ public class PlayerHandler : MonoBehaviour
     public void DisableMovement()
     {
         _canMove = false;
-        SoundEffectsPlayer.Instance.PlayNewQuestSound();
+        SoundEffectsPlayer.SoundInstance.PlayNewQuestSound();
     }
 
     // calls when dialogue is finished
@@ -225,7 +224,7 @@ public class PlayerHandler : MonoBehaviour
         if (transitionAfterDialogue)
             CameraTransition.instance.TransitionToPlayer();
         lastNPC?.Disable_QuestionMarkBubble();
-        SoundEffectsPlayer.Instance.PlayQuestCompletedSound();
+        SoundEffectsPlayer.SoundInstance.PlayQuestCompletedSound();
         // GameUIControls.instance.ToggleInteractKeyUIButton(true);
     }
 
@@ -249,7 +248,7 @@ public class PlayerHandler : MonoBehaviour
             // Transition Camera to the target npc
             CameraTransition.instance.TransitionToTarget(target.transform);
 
-            SoundEffectsPlayer.Instance.PlayDialogueTriggerSound();
+            SoundEffectsPlayer.SoundInstance.PlayDialogueTriggerSound();
         }
     }
 

@@ -6,7 +6,7 @@ using Yarn.Unity;
 
 public class CameraSequenceHandler : MonoBehaviour
 {
-    public static CameraSequenceHandler instance;
+    public static CameraSequenceHandler Instance;
 
     [Header("References")]
     public List<CameraSequenceTarget> cameraSequenceTargets = new(); // List of all camera sequence targets
@@ -19,10 +19,12 @@ public class CameraSequenceHandler : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null)
-            Destroy(gameObject);
-        else
-            instance = this;
+        Instance = this;
+
+        // if (Instance != null)
+        //     Destroy(gameObject);
+        // else
+        //     Instance = this;
     }
 
     /// <summary> Use this function to automatically trigger a camera sequence. </summary>

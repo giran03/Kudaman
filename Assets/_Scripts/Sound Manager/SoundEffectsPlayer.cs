@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class SoundEffectsPlayer : MonoBehaviour
 {
-    public static SoundEffectsPlayer Instance;
+    public static SoundEffectsPlayer SoundInstance;
 
     public Sound[] sfx;
 
     void Awake()
     {
-        if (Instance == null)
-            Instance = this;
-        else if (Instance != this)
+        if (SoundInstance == null)
+            SoundInstance = this;
+        else if (SoundInstance != this)
             Destroy(gameObject);
     }
 
@@ -20,6 +20,7 @@ public class SoundEffectsPlayer : MonoBehaviour
     public void PlayUIClickedSound() => sfx[3].Play(transform.position);
     public void PlayCatSound() => sfx[4].Play(transform.position);
     public void PlayDialogueTriggerSound() => sfx[5].Play(transform.position);
+    public void PlayRespawnSound() => sfx[6].Play(transform.position);
     public void PlaySFX(string sfxName)
     {
         Sound sfxToPlay = System.Array.Find(sfx, s => s.Audio.name == sfxName);

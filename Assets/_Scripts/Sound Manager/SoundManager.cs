@@ -20,7 +20,10 @@ public class SoundManager : MonoBehaviour
         if (Instance != null && Instance != this)
             Destroy(this);
         else
+        {
             Instance = this;
+            // DontDestroyOnLoad(Instance);
+        }
 
         CreateAudioSources();
     }

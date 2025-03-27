@@ -183,7 +183,7 @@ public class MazeMinigame : MonoBehaviour
                         tilemapPushable.SetTile(pushPos, pushableTile);
 
                         //sfx
-                        SoundEffectsPlayer.Instance.PlaySFX("broomSweep");
+                        SoundEffectsPlayer.SoundInstance.PlaySFX("broomSweep");
                     }
                 }
             }
