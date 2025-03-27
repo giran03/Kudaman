@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Image speakerImage;
     [SerializeField] private TextMeshProUGUI speakerNameText;
     [SerializeField] private TextMeshProUGUI dialogueText;
-    [SerializeField] private float typingSpeed = 0.05f;
+    [SerializeField] private float typingSpeed = 0.08f;
     [SerializeField] private float transitionSpeed = 0.5f;
 
     [Header("Animation")]
@@ -32,6 +32,7 @@ public class DialogueManager : MonoBehaviour
     public event Action OnDialogueStart;
     public event Action OnDialogueEnd;
     public bool IsDialogueActive { get; private set; }
+    public bool IsTyping => isTyping;
 
     private void Awake()
     {
@@ -116,21 +117,28 @@ public class DialogueManager : MonoBehaviour
 
     private void CompleteTyping()
     {
-        if (typingCoroutine != null)
+        if (isTyping && typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
+            dialogueText.text = currentDialogue.Dialogue[currentGroupIndex].Lines[currentLineIndex].DialogueText;
+            isTyping = false;
             typingCoroutine = null;
         }
-
-        dialogueText.text = currentDialogue.Dialogue[currentGroupIndex].Lines[currentLineIndex].DialogueText;
-        isTyping = false;
     }
+
+    private float lastEndDialogueTime = 0f;
+    private const float END_DIALOGUE_COOLDOWN = 3f;
 
     public void EndDialogueManually()
     {
         if (IsDialogueActive && !isTyping)
         {
-            EndDialogue();
+            float currentTime = Time.time;
+            if (currentTime - lastEndDialogueTime >= END_DIALOGUE_COOLDOWN)
+            {
+                lastEndDialogueTime = currentTime;
+                EndDialogue();
+            }
         }
     }
 
