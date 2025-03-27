@@ -57,7 +57,10 @@ tags:
 {$profSulayman_name}:I’d be honored. [pause = 600 /]Now where to even begin…? #line:0be8c20 
 <<ChangeSpeakerImage {$oldman_image_name_0}>>
 {$profSulayman_name}:(glancing up at the Balete tree) #line:09dfb7c 
+<<ManualCameraSequence CameraSequenceHandler 2 0>>
 {$profSulayman_name}:let’s start with a story. [pause = 600 /]Do you know of [highlight]Princess Puteli[/] and [highlight]Ugkuga?[/] #line:0444f7c 
+<<wait  3>>
+<<NextScene SceneHandler Scene_2>>
 
 <<else>>
 
@@ -69,4 +72,17 @@ tags:
 
 // NEXT SCENE~
 //Gameplay transitions into the story, fading into a new setting under the Balete tree, where the legend unfolds.
+===
+
+title:oldManEnding
+---
+<<ManualCameraSequence CameraSequenceHandler 0 0>>
+<<ShowImageHolder>>
+<<ChangeSpeakerImage {$oldman_image_name_1}>>
+{$oldMan_name}:That’s the story of Ugkuga and Putelli.
+<<ManualCameraSequence CameraSequenceHandler 1 0>>
+<<ChangeSpeakerImage {$player_image_name}>>
+{$player_name}:Thank you! I’ve learned a lot, and this will greatly help my research.
+<<wait  2>>
+<<NextScene SceneHandler MainMenu>>
 ===

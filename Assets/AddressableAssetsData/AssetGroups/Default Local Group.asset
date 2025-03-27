@@ -14,7 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Default Local Group
   m_GUID: ae48c6ef7bfd92045893f99778ff1c6f
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: a74fe3039d116c44ea21a40caf4d1059
+    m_Address: Assets/_0_Scenes/Main menu to Loading Transition.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7dc30a57889b6b049825ac1e1ad8c0d0, type: 2}
   m_SchemaSet:
