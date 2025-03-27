@@ -19,7 +19,7 @@ public class DialogueConfigsHandler : MonoBehaviour
     static Sprite[] characterSprites;
 
     PlayerHandler playerHandler;
-    static string player_image_name;
+    string player_image_name;
 
     void Awake()
     {
@@ -38,44 +38,56 @@ public class DialogueConfigsHandler : MonoBehaviour
 
     // CHANGE DIALOGUES BASED ON CHARACTER
     [YarnCommand("ChangeSpeakerImage")]
-    public void ChangeSpeakerImage(string speakerName)
+    public void ChangeSpeakerImage(string speakerName, string emotionSuffix = null)
     {
-        Debug.Log($"playerHandler.DialogueSpriteToUse(): {playerHandler.DialogueSpriteToUse()}");
-        Debug.Log($"PlayerHandler.GetSelectedGender(): {playerHandler.GetSelectedGender()}");
+        player_image_name = "";
+
+        // Debug.Log($"speakerName: {speakerName}");
+        // Debug.Log($"playerHandler.DialogueSpriteToUse(): {playerHandler.DialogueSpriteToUse()}");
+        // Debug.Log($"PlayerHandler.GetSelectedGender(): {playerHandler.GetSelectedGender()}");
         if (speakerName == "isPlayer")
         {
             if (playerHandler.GetSelectedGender() == "male")
             {
                 if (playerHandler.DialogueSpriteToUse() == "male_1")
                 {
-                    player_image_name = "journalist_1";
+                    player_image_name = "male-costume1-dialouge";
                 }
                 else if (playerHandler.DialogueSpriteToUse() == "male_2")
                 {
-                    player_image_name = "journalist_2";
+                    player_image_name = "male-costume1-dialouge"; //TODO: CHANGE
                 }
                 else if (playerHandler.DialogueSpriteToUse() == "male_3")
                 {
-                    player_image_name = "journalist_3";
+                    player_image_name = "male-costume1-dialouge"; //TODO: CHANGE
                 }
             }
             else if (playerHandler.GetSelectedGender() == "female")
             {
                 if (playerHandler.DialogueSpriteToUse() == "female_1")
                 {
-                    player_image_name = "journalist_4";
+                    player_image_name = "female-costume1-dialogue";
                 }
                 else if (playerHandler.DialogueSpriteToUse() == "female_2")
                 {
-                    player_image_name = "journalist_5";
+                    player_image_name = "female-costume1-dialogue"; //TODO: CHANGE
                 }
                 else if (playerHandler.DialogueSpriteToUse() == "female_3")
                 {
-                    player_image_name = "journalist_6";
+                    player_image_name = "female-costume1-dialogue"; //TODO: CHANGE
                 }
             }
 
-            speakerImageDisplay.sprite = characterSprites.FirstOrDefault(sprite => sprite.name == speakerName);
+            //check suffix
+            if (emotionSuffix != null)
+            {
+                player_image_name += emotionSuffix;
+                Debug.Log($"player image name with suffix: {player_image_name}");
+            }
+            else
+                player_image_name += "_0";
+
+            speakerImageDisplay.sprite = characterSprites.FirstOrDefault(sprite => sprite.name == player_image_name);
         }
         else
             speakerImageDisplay.sprite = characterSprites.FirstOrDefault(sprite => sprite.name == speakerName);

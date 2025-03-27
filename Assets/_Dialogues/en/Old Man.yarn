@@ -18,9 +18,10 @@ tags:
 {$oldMan_name}:I see you’re trying to write about [highlight]indigenous stories[/]. #line:0cf7a9b 
 {$oldMan_name}:noble effort, but from the looks of this… [pause = 600 /]you seem a little lost. #line:0bf57aa 
 
-<<ChangeSpeakerImage DialogueConfigs {$player_image_name}>>
+<<ChangeSpeakerImage DialogueConfigs {$player_image_name} "_2">>
 {$player_name}:(sheepish smile) #line:07ca9ab 
 {$player_name}:Haha.. [pause = 600 /]That obvious, huh? I just don’t know where to start. #line:0930c9a 
+<<ChangeSpeakerImage DialogueConfigs {$player_image_name}>>
 {$player_name}:There are so many versions of these tales, [pause = 600 /]and I [pause = 600 /]don’t want to get anything wrong. #line:01f8f7c 
 {$player_name}:I need an angle, [pause = 600 /]something compelling, ya know? #line:0c8733b 
 
@@ -35,7 +36,7 @@ tags:
 {$profSulayman_name}:The name’s [highlight]Impaklud Sulayman[/].[pause = 600 /]But most just call me [highlight]"Professor Sulayman"[/] #line:040ec60 
 
 //choices
-<<ChangeSpeakerImage DialogueConfigs {$player_image_name}>>
+<<ChangeSpeakerImage DialogueConfigs {$player_image_name} "_1">>
 ->Wait, really? You're a scholar? #line:0ae2d93 
     <<ChangeSpeakerImage DialogueConfigs {$oldman_image_name_1}>>
     {$profSulayman_name}:That’s what they call me, [pause = 600 /]though I prefer ‘storyteller.’ [pause = 600 /]Names are just labels, after all. #line:047fb04 
@@ -46,9 +47,10 @@ tags:
     <<ChangeSpeakerImage DialogueConfigs {$oldman_image_name_1}>>
     {$profSulayman_name}:That they are alive. [pause = 600 /]They are not just words on a page but echoes of those who lived before us. #line:0faac6b 
 
-<<ChangeSpeakerImage DialogueConfigs {$player_image_name}>>
+<<ChangeSpeakerImage DialogueConfigs {$player_image_name} "_2">>
 {$player_name}:(eagerly) #line:0b638b0 
 {$player_name}:If you don’t mind, [pause = 600 /]could I ask you a few questions? #line:0a261c3 
+<<ChangeSpeakerImage DialogueConfigs {$player_image_name}>>
 {$player_name}:Maybe even get your help in shaping my project? #line:007c55c 
 
 <<ChangeSpeakerImage DialogueConfigs {$oldman_image_name_0}>>
@@ -81,7 +83,7 @@ title:oldManEnding
 <<ChangeSpeakerImage DialogueConfigs {$oldman_image_name_1}>>
 {$oldMan_name}:That’s the story of Ugkuga and Putelli.
 <<ManualCameraSequence CameraSequenceHandler 1 0>>
-<<ChangeSpeakerImage DialogueConfigs {$player_image_name}>>
+<<ChangeSpeakerImage DialogueConfigs {$player_image_name} "_2">>
 {$player_name}:Thank you! I’ve learned a lot, and this will greatly help my research.
 <<wait  2>>
 <<NextScene SceneHandler MainMenu>>
