@@ -60,21 +60,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx:
-  - <Audio>k__BackingField: {fileID: 8300000, guid: 07e4200b8db1d344da0e45284621c763, type: 3}
+  - <Audio>k__BackingField: {fileID: 8300000, guid: 80185dc4dcc06004baa7fb634dada20d, type: 3}
     <Volume>k__BackingField: 1
     <Range>k__BackingField: 100
-  - <Audio>k__BackingField: {fileID: 8300000, guid: 31a3ddfdd372b1141b18e1124ebf37c8, type: 3}
-    <Volume>k__BackingField: 1
+  - <Audio>k__BackingField: {fileID: 8300000, guid: f151cd7b07e3f824baff66e3483d71c0, type: 3}
+    <Volume>k__BackingField: 0.4
     <Range>k__BackingField: 100
   - <Audio>k__BackingField: {fileID: 8300000, guid: 7880433138bac76458a75021661c0384, type: 3}
-    <Volume>k__BackingField: 1
+    <Volume>k__BackingField: 0.4
     <Range>k__BackingField: 100
   - <Audio>k__BackingField: {fileID: 8300000, guid: 00f688cd4c731f244a2de05863b3363f, type: 3}
-    <Volume>k__BackingField: 1
+    <Volume>k__BackingField: 0.4
     <Range>k__BackingField: 100
   - <Audio>k__BackingField: {fileID: 8300000, guid: d32a1838589c4ce4aa7879335938ef9a, type: 3}
-    <Volume>k__BackingField: 1
+    <Volume>k__BackingField: 0.7
     <Range>k__BackingField: 100
   - <Audio>k__BackingField: {fileID: 8300000, guid: a51d7a66a38494d47b7369b25023f527, type: 3}
-    <Volume>k__BackingField: 1
+    <Volume>k__BackingField: 0.5
+    <Range>k__BackingField: 100
+  - <Audio>k__BackingField: {fileID: 8300000, guid: c8536dcc50716d94f894d7c765cc1ae3, type: 3}
+    <Volume>k__BackingField: 0.5
+    <Range>k__BackingField: 100
+  - <Audio>k__BackingField: {fileID: 8300000, guid: 7a09202910641d0429f5a4901eaaf76b, type: 3}
+    <Volume>k__BackingField: 0.5
     <Range>k__BackingField: 100

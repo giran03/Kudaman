@@ -21,7 +21,7 @@ title:puteliInteractionWithBalete
 <<OnPuteliBaleteInteractStart Player_1>>
 
 //TODO:REMOVE
-<<stop>>
+// <<stop>>
 
 <<if visited("puteliInteractionWithBalete") is true>>
 <<jump baleteChoices>>
@@ -40,7 +40,9 @@ title:puteliInteractionWithBalete
 <<ShowImageHolder>>
 
 <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
+<<UgkugaEyesOpen UgkugaEyes>>
 {$ugkuga}(disguised):The man whom you’re destined to spend an eternity with is... [pause = 800/]Ugkuga! #line:024f2ba 
+<<UgkugaEyesClose UgkugaEyes>>
 
 <<HideImageHolder>>
 (The maids gasp, horrified.) #line:0ac1e2b 
@@ -62,14 +64,20 @@ title:baleteChoices
 ---
 <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
 ->Why Ugkuga? #line:0b60d54 
+    <<UgkugaEyesOpen UgkugaEyes>>
     <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
     {$ugkuga}(disguised):His heart is strong, and his mind is clever. #line:08bb40a 
+    <<UgkugaEyesClose UgkugaEyes>>
 ->Is there truly no one else? #line:0861ee9 
+    <<UgkugaEyesOpen UgkugaEyes>>
     <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
     {$ugkuga}(disguised):Fate cannot be changed, princess... #line:045dbbb 
+    <<UgkugaEyesClose UgkugaEyes>>
 ->What if I refuse? #line:0c90056 
+    <<UgkugaEyesOpen UgkugaEyes>>
     <<ChangeSpeakerImage {$ugkuga_image_name_3}>>
     {$ugkuga}(disguised):The spirits will not be pleased... #line:06774d4 
+    <<UgkugaEyesClose UgkugaEyes>>
 ===
 
 title:puteliEndingScene4
