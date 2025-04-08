@@ -11,10 +11,10 @@ public class GeneralTrigger : MonoBehaviour
     public bool triggerOnce = false;
     [Dropdown("GetTags"), SerializeField] private string triggerTag;
 
-    private List<string> GetTags()
-    {
-        return UnityEditorInternal.InternalEditorUtility.tags.ToList();
-    }
+    // private List<string> GetTags()
+    // {
+    //     return UnityEditorInternal.InternalEditorUtility.tags.ToList();
+    // }
 
     private bool triggered = false;
 
