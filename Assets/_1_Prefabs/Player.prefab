@@ -19,9 +19,6 @@ GameObject:
   - component: {fileID: 2583385915689811627}
   - component: {fileID: 4046263768078598398}
   - component: {fileID: 9174470335933563473}
-  - component: {fileID: 5257148267155297556}
-  - component: {fileID: 7600020279777145995}
-  - component: {fileID: 1390089585824342916}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -291,7 +288,6 @@ MonoBehaviour:
   _movementVector: {x: 0, y: 0}
   _rb: {fileID: 0}
   animator: {fileID: 0}
-  playerAudio: {fileID: 0}
 --- !u!114 &4046263768078598398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,7 +311,7 @@ MonoBehaviour:
   ugkuga_idleSpriteSheet: {fileID: 6289842542534860394, guid: 041a3ce2fabffad4db5b303b74bf9260, type: 3}
   ugkuga_walkSpriteSheet: {fileID: -975314051, guid: cec5d7f66ae9b8c468c50e8ad871374d, type: 3}
   puteli_idleSpriteSheet: {fileID: -4195579314422226629, guid: 8ded76173adc1a747a34571800ed544a, type: 3}
-  puteli_walkSpriteSheet: {fileID: 583879241586136724, guid: eb255bfa1f411ad48a2107b859938d05, type: 3}
+  puteli_walkSpriteSheet: {fileID: -4195579314422226629, guid: 8ded76173adc1a747a34571800ed544a, type: 3}
   player_male_idleSpriteSheet: {fileID: -8847009744761790242, guid: a9ea38e6c2361844db6968a3bee60255, type: 3}
   player_male_walkSpriteSheet: {fileID: -249218660899659974, guid: d58f324a9d9b52345b2d26242b62070a, type: 3}
   player_female_idleSpriteSheet: {fileID: 4614930000207874894, guid: 518d36624d026f24a919ad1c6bd2f7cf, type: 3}
@@ -380,44 +376,6 @@ MonoBehaviour:
   OnUgkugaTriggerEnding:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5257148267155297556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4184775647960884170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00f4e72e5f5b87144bb2569a99519f89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerSFX: []
-  player_footstepsSFX:
-    <Audio>k__BackingField: {fileID: 8300000, guid: 1f3447c3c7d34ee4bbf4b0dbb4e610ba, type: 3}
-    <Volume>k__BackingField: 0.2
-    <Range>k__BackingField: 500
---- !u!81 &7600020279777145995
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4184775647960884170}
-  m_Enabled: 1
---- !u!114 &1390089585824342916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4184775647960884170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9148250c2b4619a43b604e72eb85d6b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioListener: {fileID: 7600020279777145995}
 --- !u!1 &7710340497465403251
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,16 +25,8 @@ public class SceneHandler : MonoBehaviour
             Destroy(gameObject);
     }
 
-    private void Start()
-    {
-        if (SceneManager.GetActiveScene().name == "MainMenu")
-            MusicManager.Instance.PlayMusic("MainMenu");
-    }
-
     public void LoadSceneWithTransition(string sceneName)
     {
-        MusicManager.Instance.PlayMusic(sceneName);
-
         PlayerPrefs.SetString("previousScene", SceneManager.GetActiveScene().name);
         TransitionManager.Instance().Transition(sceneName, transitionSettings, transitionDelay);
         onSceneChange?.Invoke();

@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class PlayerAnimationController : MonoBehaviour
@@ -30,7 +29,6 @@ public class PlayerAnimationController : MonoBehaviour
 
     Sprite active_idleSpriteSheet;
     Sprite active_walkSpriteSheet;
-    private bool isFootstepsOnCd;
 
     private void Start()
     {
@@ -64,12 +62,6 @@ public class PlayerAnimationController : MonoBehaviour
     void Update()
     {
         UpdateAnimatorController();
-        if (playerHandler._movementVector.magnitude > .5f)
-        {
-            // SFX
-            if (!isFootstepsOnCd)
-                StartCoroutine(PlayFootsteps());
-        }
     }
 
     private void UpdateAnimatorController()
@@ -106,13 +98,5 @@ public class PlayerAnimationController : MonoBehaviour
             animator.runtimeAnimatorController = idleAnimatorController;
             spriteSwitch.spriteTexture = active_idleSpriteSheet.texture;
         }
-    }
-
-    IEnumerator PlayFootsteps()
-    {
-        isFootstepsOnCd = true;
-        playerHandler.playerAudio.player_footstepsSFX?.PlayWithRandomPitch(transform.position);
-        yield return new WaitForSeconds(.5f);
-        isFootstepsOnCd = false;
     }
 }

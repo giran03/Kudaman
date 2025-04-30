@@ -25,7 +25,7 @@ tags:
 <<HideImageHolder>>
 (She enters the mosquito net and sits down beside him.) #line:04477ed 
 (They sit for a good 5 seconds of silence after either choice before Puteli speaks again) #line:050a31e 
-...[pause = 5000/] #line:05e4ec9 
+...[pause = 5000/]
 <<ShowImageHolder>>
 
 <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_2}>>
@@ -192,18 +192,18 @@ title:Ugkuga_windmill
 ---
 <<ShowImageHolder>>
 <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
-{$ugkuga}:(I should find a spot to rest...) #line:0e54843 
-{$ugkuga}:(Maybe behind the barn with windmill...) #line:00ed11d 
-{$ugkuga}:(Yeah, that's a good spot) #line:0146b6d 
+{$ugkuga}:(I should find a spot to rest...)
+{$ugkuga}:(Maybe behind the barn with windmill...)
+{$ugkuga}:(Yeah, that's a good spot)
 ===
 
 title:Ugkuga_2
 ---
 <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
 
-{$ugkuga}:(Ahh...) #line:058a198 
-{$ugkuga}:(Time to rest...) #line:0b426b9 
-{$ugkuga}:(Yeah, that's a good spot) #line:0b064ae 
+{$ugkuga}:(Ahh...)
+{$ugkuga}:(Time to rest...)
+{$ugkuga}:(Yeah, that's a good spot)
 ===
 
 title:Ugkuga_3
@@ -211,9 +211,9 @@ title:Ugkuga_3
 <<OnUgkugaTriggerEnding Player>>
 // <<ChangeSpeakerImage {$ugkuga_image_name_2}>>
 <<HideImageHolder>>
-(Ugkuga felt his eyes grow heavy but he could not sleep from the mosquitoes flying around him) #line:0266ebb 
-(He waves his hands and tries to shoo away the flying pests when he sees a figure emerge from the shadow of the trees) #line:0bb4120 
-(It was puteli, holding a mosquito net.) #line:05e7b80 
+(Ugkuga felt his eyes grow heavy but he could not sleep from the mosquitoes flying around him)
+(He waves his hands and tries to shoo away the flying pests when he sees a figure emerge from the shadow of the trees)
+(It was puteli, holding a mosquito net.)
 <<ShowImageHolder>>
 
 <<jump Scene_6_Mosquito_Net>>
@@ -223,10 +223,10 @@ title:FinalScene
 ---
 //scene 7
 <<HideImageHolder>>
-Years pass... #line:004638e 
-Ugkuga, despite his laziness, grows into a wise and cunning ruler beside Puteli. #line:0e888b6 
-His deception is never uncovered, [pause = 600/]and he secures a life of ease by the princess’s side. #line:0c1861b 
-the end. #line:006abdb 
+Years pass...
+Ugkuga, despite his laziness, grows into a wise and cunning ruler beside Puteli.
+His deception is never uncovered, [pause = 600/]and he secures a life of ease by the princess’s side.
+...
 <<NextScene SceneHandler MainMenu>>
 <<ShowImageHolder>>
 ===

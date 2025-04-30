@@ -72,8 +72,8 @@ title:baleteChoices
 title:puteliEndingScene4
 ---
 <<HideImageHolder>>
-(Puteli and the maids returns to the castle) #line:0c99e30 
-(Ugkuga emerges from the tree after Puteli and the maids make their journey) #line:0783a9e 
+(Puteli and the maids returns to the castle)
+(Ugkuga emerges from the tree after Puteli and the maids make their journey)
 <<ShowImageHolder>>
 <<Disable_Puteli_2 Puteli_Ending_Trigger>>
 ===
@@ -81,9 +81,9 @@ title:puteliEndingScene4
 title:ugkugaEndingScene4
 ---
 <<HideImageHolder>>
-(Ugkuga heads towards the castle with haste, taking the shorter path he’s made for himself) #line:09e01df 
-(Leading to him arriving earlier than the princess and maids back in the royal garden) #line:0d11326 
-(leaving them surprised and curious of his early arrival) #line:071ebf9 
+(Ugkuga heads towards the castle with haste, taking the shorter path he’s made for himself)
+(Leading to him arriving earlier than the princess and maids back in the royal garden)
+(leaving them surprised and curious of his early arrival)
 <<ShowImageHolder>>
 //chage scene
 <<NextScene SceneHandler Scene_5>>

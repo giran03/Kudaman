@@ -15,7 +15,7 @@ tags:
 
 <<ChangeSpeakerImage {$oldman_image_name_0}>>
 {$oldMan_name}:(handing the page back)  #line:0bc859a 
-{$oldMan_name}:I see you’re trying to write about [highlight]indigenous stories[/]. #line:0cf7a9b 
+{$oldMan_name}:see you’re trying to write about [highlight]indigenous stories[/]. #line:0cf7a9b 
 {$oldMan_name}:noble effort, but from the looks of this… [pause = 600 /]you seem a little lost. #line:0bf57aa 
 
 <<ChangeSpeakerImage {$player_image_name}>>
@@ -62,7 +62,7 @@ tags:
 <<else>>
 
 <<ChangeSpeakerImage {$oldman_image_name_0}>>
-{$profSulayman_name}:You should get going now... #line:04b3220 
+{$profSulayman_name}:You should get going now...
 
 <<NextScene SceneHandler Scene_2>>
 <<endif>>
