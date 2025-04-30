@@ -5,8 +5,7 @@ tags:
 <<if visited("Ugkuga_and_the_Pretty_Princess") is false>>
 
 <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_0}>>
-{$puteli}:Ugkuga, [pause = 800/]I have an important task for you.  #line:0ac6b91 
-{$puteli}:I need the path to the Balete Tree cleaned [pause = 800/] so I may speak with the spirits there #line:0276615 
+{$puteli}:Ugkuga, [pause = 800/]I have an important task for you. I need the path to the Balete Tree cleaned [pause = 800/] so I may speak with the spirits there #line:0ac6b91 
 
 <<ChangeSpeakerImage {$ugkuga_image_name_0}>>
 {$ugkuga}:(grinning) #line:0ee5a72 
@@ -61,16 +60,12 @@ tags:
 
 <<ChangeSpeakerImage {$MaidSulaya_dialogue_1}>>
 {$maid_sulaya}:(annoyed) #line:0da14fb 
-{$maid_sulaya}:I think it's good that our lady puts that man to work. #line:010ee7b
-<<ChangeSpeakerImage {$MaidSulaya_dialogue_0}>>
-{$maid_sulaya}:All he does is lounge around and eat all the mangoes from the royal garden! #line:0215c2e 
-<<ChangeSpeakerImage {$MaidSulaya_dialogue_1}>>
-{$maid_sulaya}:Surely some discipline would do him good. #line:0385a2f
+{$maid_sulaya}:I think it's good that our lady puts that man to work. All he does is lounge around and eat all the mangoes from the royal garden! Surely some discipline would do him good.#line:010ee7b
 
 <<EnableSceneChangeTrigger SceneChangeTrigger>>
 
 <<else>>
     <<ChangeSpeakerImage {$PrincessPuteli_Dialogue_Sprites_3}>>
-    {$puteli}:You should get going now...
+    {$puteli}:You should get going now... #line:02d0808 
 <<endif>>
 ===

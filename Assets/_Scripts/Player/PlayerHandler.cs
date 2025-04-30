@@ -39,9 +39,6 @@ public class PlayerHandler : MonoBehaviour
     [SerializeField] int _speed = 5;
     [SerializeField] float interactionRadius;
     [Space]
-    // Sound _sfx_footsteps;
-    // [SerializeField] Sound sfx_footsteps_region1;
-    // [SerializeField] Sound sfx_footsteps_region4;
 
     [HideInInspector] public Vector2 _movementVector;
     [HideInInspector] public Rigidbody2D _rb;
@@ -50,14 +47,13 @@ public class PlayerHandler : MonoBehaviour
     public static PlayerInput _playerInput;
     public static bool IsMazeMinigameActive { get; set; }
     bool _canMove = true;
-    bool isFootstepsOnCd;
-    GameObject _otherGameobject;
 
     public static PlayerEvents playerEvents;
     SpriteSwitch spriteSwitch;
     DialogueRunner dialogueRunner;
     DialogueAdvanceInput dialogueInput;
     NPC lastNPC;
+    public PlayerAudio playerAudio;
 
     // auto move
     float timeElapsed = 0;
@@ -72,12 +68,36 @@ public class PlayerHandler : MonoBehaviour
         _playerInput = GetComponent<PlayerInput>();
         playerEvents = GetComponent<PlayerEvents>();
         spriteSwitch = GetComponent<SpriteSwitch>();
+        playerAudio = GetComponent<PlayerAudio>();
+        Debug.Log($"playerAudio: {playerAudio}");
 
         Application.targetFrameRate = 60;
 
         animator = GetComponent<Animator>();
 
         mazeMinigame = FindFirstObjectByType<MazeMinigame>();
+
+        //get player gender
+        if (isPlayer)
+        {
+            var playerGenderFromPrefs = PlayerPrefs.GetString("playerGender");
+            if (playerGenderFromPrefs == "Male")
+            {
+                isMale = true;
+                isFemale = false;
+            }
+            else if (playerGenderFromPrefs == "Female")
+            {
+                isMale = false;
+                isFemale = true;
+            }
+            else
+            {
+                Debug.LogWarning($"No player gender found in PlayerPrefs. Defaulting to Male.");
+                isMale = true;
+                isFemale = false;
+            }
+        }
     }
 
     private void OnEnable()
@@ -114,29 +134,17 @@ public class PlayerHandler : MonoBehaviour
 
     private void Update()
     {
-        // if (_movementVector.magnitude > .5f)
-        // {
-        //     // SFX
-        //     if (!isFootstepsOnCd)
-        //         StartCoroutine(PlayFootsteps());
-        // }
 
         // Remove all player control when we're in dialogue
         if (dialogueRunner.IsDialogueRunning == true)
-        {
             return;
-        }
 
         // every time we LEAVE dialogue we have to make sure we disable the input again
         if (dialogueInput.enabled)
-        {
             dialogueInput.enabled = false;
-        }
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
             CheckForNearbyNPC();
-        }
     }
 
     private void OnMovement(InputValue value) => _movementVector = value.Get<Vector2>();
@@ -176,24 +184,6 @@ public class PlayerHandler : MonoBehaviour
                 }
             }
         }
-
-        // if (other.CompareTag("Region"))
-        // {
-        //     // FOOTSTEPS SFX
-        //     string[] grassyRegions = { "1", "2", "3" };
-        //     string[] rockyRegions = { "4", "5", "6" };
-
-        //     if (grassyRegions.Any(name => other.name.Contains(name)))
-        //         _sfx_footsteps = sfx_footsteps_region1;
-        //     else if (rockyRegions.Any(name => other.name.Contains(name)))
-        //         _sfx_footsteps = sfx_footsteps_region4;
-
-        //     // BGM
-        //     if (other.name.Contains("1") || other.name.Contains("2"))
-        //         SingletonHandler.musicManager.PlayMusic("Region1BGM");
-        //     else if (other.name.Contains("3"))
-        //         SingletonHandler.musicManager.PlayMusic("Region3BGM");
-        // }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -206,18 +196,11 @@ public class PlayerHandler : MonoBehaviour
                     mazeMinigame.pushText.SetActive(false);
     }
 
-    // void Interact()
-    // {
-    //     _otherGameobject?.GetComponent<IInteractable>().Interact(gameObject);
-
-    //     //sfx
-    //     SingletonHandler.globalSFX.PlayPopSFX();
-    // }
-
     // calls when dialogue is initialized
     public void DisableMovement()
     {
         _canMove = false;
+        SoundEffectsPlayer.Instance.PlayNewQuestSound();
     }
 
     // calls when dialogue is finished
@@ -227,17 +210,9 @@ public class PlayerHandler : MonoBehaviour
         if (transitionAfterDialogue)
             CameraTransition.instance.TransitionToPlayer();
         lastNPC?.Disable_QuestionMarkBubble();
+        SoundEffectsPlayer.Instance.PlayQuestCompletedSound();
         // GameUIControls.instance.ToggleInteractKeyUIButton(true);
     }
-
-    // SFX
-    // IEnumerator PlayFootsteps()
-    // {
-    //     isFootstepsOnCd = true;
-    //     _sfx_footsteps.PlayWithRandomPitch(transform.position);
-    //     yield return new WaitForSeconds(.75f);
-    //     isFootstepsOnCd = false;
-    // }
 
     // DIALOGUES
     public void CheckForNearbyNPC()
@@ -258,6 +233,8 @@ public class PlayerHandler : MonoBehaviour
 
             // Transition Camera to the target npc
             CameraTransition.instance.TransitionToTarget(target.transform);
+
+            SoundEffectsPlayer.Instance.PlayDialogueTriggerSound();
         }
     }
 
